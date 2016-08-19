@@ -1,0 +1,113 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu1 {
+    float: left;
+    padding-left: 50px;
+}
+
+#menu2 {
+    float: right;
+    padding-right: 50px;
+}
+
+/*
+padding:10px 5px 15px 20px;
+top padding is 10px
+right padding is 5px
+bottom padding is 15px
+left padding is 20px
+*/
+
+#navbar {
+    position: relative;
+    top: -9px;
+    padding: 9px 0px 40px 0px;
+    background-color: aliceblue;
+    
+}
+
+/*
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+*/
+#navbar.navbar-fixed {
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:15px;
+}
+#navbar.navbar-absolute {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:15px;
+}
+
+#navbar ul,li,a {
+    display: inline;
+    padding-left: 10px;
+    text-decoration: none;
+    color: dimgray;
+/*    position: fixed;*/
+}
+
+.jumbotron {
+/*    background-color: cornflowerblue;*/
+    background-image: url(images/skateboard_banner.jpg);
+    background-size: cover;
+    position: relative;
+    top: 65px;
+    padding: 75px 0px 200px 0px;
+}
+
+.jumbotron h1,h4 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px grey;
+}
+
+.about{
+    position:relative;
+    margin: 100px 25% 0px 25%;
+}
+
+
+#container-self{
+    position: absolute;
+    top: 0px;
+    left: -150px;
+}
+
+#container-self .self-image {
+    content:url(images/self.jpg);
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#container-self .self-name{
+    position: absolute;
+    top: 100px;
+    left: -20px;
+    white-space: nowrap;
+}
+/*
+.self-image .self-name{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}*/
