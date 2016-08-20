@@ -13,11 +13,65 @@ body {
 #menu1 {
     float: left;
     padding-left: 50px;
+/*    top: -10px;*/
 }
 
 #menu2 {
     float: right;
     padding-right: 50px;
+}
+
+/*
+.btn {
+  background: #F0F8FF;
+  background-image: -webkit-linear-gradient(top, #F0F8FF, #F0F8FF);
+  background-image: -moz-linear-gradient(top, #F0F8FF, #F0F8FF);
+  background-image: -ms-linear-gradient(top, #F0F8FF, #F0F8FF);
+  background-image: -o-linear-gradient(top, #F0F8FF, #F0F8FF);
+  background-image: linear-gradient(to bottom, #F0F8FF, #F0F8FF);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #F0F8FF;
+  background-image: -webkit-linear-gradient(top, #F0F8FF, #FFFFFF);
+  background-image: -moz-linear-gradient(top, #F0F8FF, #FFFFFF);
+  background-image: -ms-linear-gradient(top, #F0F8FF, #FFFFFF);
+  background-image: -o-linear-gradient(top, #F0F8FF, #FFFFFF);
+  background-image: linear-gradient(to bottom, #F0F8FF, #FFFFFF);
+  text-decoration: none;
+}
+
+*/
+
+a.button {
+/*
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px 20px 10px 20px;
+    text-decoration: none;
+    top: 10px;
+*/
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    padding: 0px 20px 10px 20px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 /*
