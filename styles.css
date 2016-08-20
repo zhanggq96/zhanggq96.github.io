@@ -12,13 +12,13 @@ body {
 
 #menu1 {
     float: left;
-    padding-left: 50px;
+    padding-left: 30px;
 /*    top: -10px;*/
 }
 
 #menu2 {
     float: right;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 /*
@@ -67,11 +67,26 @@ a.button {
 */
     background-color: Transparent;
     background-repeat:no-repeat;
-    padding: 0px 20px 10px 20px;
+    padding: 25px 10px 21px 10px;
+/*    white-space: 0px;*/
+/*    shape-margin: 0px;*/
+/*    border-spacing: 0px*/
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+
+a.button:hover {
+    background-color: #000000;
+/*
+    background-image: -webkit-linear-gradient(top, #F0F8FF, #FFFFFF);
+    background-image: -moz-linear-gradient(top, #F0F8FF, #FFFFFF);
+    background-image: -ms-linear-gradient(top, #F0F8FF, #FFFFFF);
+    background-image: -o-linear-gradient(top, #F0F8FF, #FFFFFF);
+    background-image: linear-gradient(to bottom, #F0F8FF, #FFFFFF);
+    text-decoration: none;
+*/
 }
 
 /*
@@ -86,7 +101,7 @@ left padding is 20px
     position: relative;
     top: -9px;
     padding: 9px 0px 40px 0px;
-    background-color: aliceblue;
+    background-color: white;
     
 }
 
