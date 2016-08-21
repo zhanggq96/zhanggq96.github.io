@@ -5,31 +5,16 @@
             Lorem Ipsum
         </Title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <script type="text/javascript">
-
-            function window_onload() {
-              window.addEventListener("scroll",navbar_reset_top,false);
-            }
-
-            var navbar_top=0;
-
-            function navbar_reset_top() {
-              var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-              if(scrollTop>navbar_top&&navbar.className==="navbar-absolute") {
-                document.getElementById("navbar").className="navbar-fixed";
-              }
-              else if(scrollTop<navbar_top&&navbar.className==="navbar-fixed") {
-                document.getElementById("navbar").className="navbar-absolute";
-              }
-            }
-
-        </script>
+        <script type="text/javascript" src="js/navbar-scroll.js"></script>
+        <script src="jquery/jquery-3.1.0.min.js"></script>
+        <script src="js/load.js"></script>
     </head>
     <body onload="javascript:window_onload();">
         <div class="jumbotron">
-            <h1>Lorem Ipsum!</h1>
-            <h4>Dolorem sit amet</h4>
+            <h1>Lorem Ipsum</h1>
+            <h4>Dolore sit amet</h4>
         </div>
+<!--
         <div id="navbar" class="navbar-absolute">
             
             <ul id="menu1">
@@ -43,12 +28,13 @@
                 <li><a href="#">L2</a></li>
                 <li><a href="#">L3</a></li>
             </ul>
-<!--            <script type="text/javascript" src="/js/navbar-scroll.js"></script>-->
+Comment this            <script type="text/javascript" src="/js/navbar-scroll.js"></script>
             
             
         </div>
+-->
         
-        
+        <nav data-load="html/navbar.html"></nav>
         
         <div class="main">
             <h2>Lorem</h2>

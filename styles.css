@@ -1,3 +1,11 @@
+/*
+padding:10px 5px 15px 20px;
+top padding is 10px
+right padding is 5px
+bottom padding is 15px
+left padding is 20px
+*/
+
 html {
     overflow-y: scroll;
 }
@@ -10,7 +18,19 @@ body {
     margin: 0px;
 }
 
+#navbar {
+    
+    position: relative;
+    top: -9px;
+    padding: 9px 0px 40px 0px;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+
+
 #menu1 {
+    
     float: left;
     padding-left: 30px;
 /*    top: -10px;*/
@@ -52,6 +72,9 @@ body {
 */
 
 a.button {
+    position:relative;
+    /* It seems as though this -40px is to counter the 40 px bottom padding under #navbar?*/
+    top:-40px;
 /*
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -67,14 +90,30 @@ a.button {
 */
     background-color: Transparent;
     background-repeat:no-repeat;
-    padding: 25px 10px 21px 10px;
+    color: #ffffff;
+    padding: 20px 20px 10px 20px;
+    
+    line-height: 3em;
+    display: block;
+    float:left;
+/*
+    padding-left: 20px;
+    padding-right: 20px;
+*/
 /*    white-space: 0px;*/
 /*    shape-margin: 0px;*/
 /*    border-spacing: 0px*/
+/*    display: block;*/
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    
+    -moz-transition: 1s linear;
+    -ms-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
 
 a.button:hover {
@@ -87,22 +126,6 @@ a.button:hover {
     background-image: linear-gradient(to bottom, #F0F8FF, #FFFFFF);
     text-decoration: none;
 */
-}
-
-/*
-padding:10px 5px 15px 20px;
-top padding is 10px
-right padding is 5px
-bottom padding is 15px
-left padding is 20px
-*/
-
-#navbar {
-    position: relative;
-    top: -9px;
-    padding: 9px 0px 40px 0px;
-    background-color: white;
-    
 }
 
 /*
@@ -139,8 +162,8 @@ left padding is 20px
     background-image: url(images/skateboard_banner.jpg);
     background-size: cover;
     position: relative;
-    top: 65px;
-    padding: 75px 0px 200px 0px;
+    top: 0px;
+    padding: 75px 0px 300px 0px;
 }
 
 .jumbotron h1,h4 {
