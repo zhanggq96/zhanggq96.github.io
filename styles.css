@@ -34,11 +34,17 @@ html {
     padding-right: 0px;
 }
 
+#spacer {
+    height: 50px;
+}
+
 .footer {
     text-align: center;
     background-color: rgba(0,0,0,0.9);
     width: 100%;
     bottom: 0;
+/*    height: 10px;*/
+/*    padding-top: 100px;*/
 }
 
 .footer #footer-text {
@@ -165,7 +171,7 @@ a.button:hover {
 
 #navbar ul,li,a {
     display: inline;
-    padding-left: 10px;
+/*    padding-left: 10px;*/
     text-decoration: none;
     color: dimgray;
 /*    position: fixed;*/
@@ -188,7 +194,7 @@ a.button:hover {
 
 .about{
     position:relative;
-    margin: 100px 25% 0px 25%;
+    margin: 50px 25% 0px 25%;
 }
 
 
@@ -211,6 +217,13 @@ a.button:hover {
     left: -20px;
     white-space: nowrap;
 }
+/*Project CSS*/
+/*Work on fixed width project info boxes*/
+.project {
+/*    position: absolute;*/
+    
+}
+
 /*
 .self-image .self-name{
     position: absolute;

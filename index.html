@@ -6,7 +6,7 @@
         <script src="jquery/jquery-3.1.0.min.js"></script>
         <script src="js/load.js"></script>
         <Title>
-            Lorem Ipsum
+            Home
         </Title>
 <!--
         <script type="text/javascript">
@@ -32,10 +32,13 @@
         
     </head>
     <body onload="javascript:window_onload();">
+<!--
         <div class="jumbotron">
-<!--            <h1>Lorem Ipsum</h1>-->
-<!--            <h4>Dolor sit amet</h4>-->
+
         </div>
+-->
+        
+        <nav data-load="html/jumbotron.html"></nav>
         
 <!--        <?php include("navbar.php"); ?>-->
         <!--#include file="navbar.html"-->
@@ -69,21 +72,13 @@
         <div class="main">
             
             
-            <div class="about">
+            <div id="about" class="about">
                 <h2>About</h2>
-                <p>I am a third year electrical engineering student at McMaster University living in Hamilton, Ontario.</p>
+                <p>I am a third year electrical engineering student studying at McMaster University. Aside from engineering, my interests include mathematics, computers, machine learning and Japanese.</p>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
                 <div id="container-self">
                     <div class="self-image">
 <!--                        <div class="self-name"><h3>George Zhang</h3></div>-->
@@ -94,7 +89,24 @@
                 
                 
             </div>
-            <nav data-load="html/navbar.html"></nav>
+            
+            <div id="Misc Info" class="about">
+                <h2>Misc Info</h2>
+                <div id="PC specs">
+<!--                    navbar a is making this color. Fix later.-->
+                    <h3>PC Setup:</h3>
+                    <p>Prebuilt ASUS PC with some modifications.</p>
+                    <a>Processor: i5 3350P</a><br> 
+                    <a>GPU: ASUS GTX 960</a><br>
+                    <a>RAM: 12 GB</a><br>
+                    <a>Mobo:</a><br>
+                    <a>PSU:</a><br><br>
+                    <a>Monitor: 1x ASUS, 1x ...</a><br>
+                    <a>Keyboard: Logitech G710+</a><br>
+                    <a>Mouse: Logitech G502 (Proteus Core)</a><br>
+                    <a>Mousepad: Steelseries ...</a><br>
+                </div>
+            </div>
 <!--
             <div id="container-self">
                 <div class="self-image">
@@ -112,6 +124,7 @@
     
     </body>
     
+    <nav data-load="html/navbar.html"></nav>
     <nav data-load="html/footer.html"></nav>
 
 </html>
