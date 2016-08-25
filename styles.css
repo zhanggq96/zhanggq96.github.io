@@ -13,9 +13,10 @@ html {
 #navbar {
     
     position: relative;
-    top: -9px;
-    padding: 9px 0px 40px 0px;
+    top: -10px;
+    padding: 0px 0px 21px 0px;
     background-color: rgba(0,0,0,0.5);
+/*    text-transform:uppercase;*/
     
 }
 
@@ -30,9 +31,14 @@ html {
 
 #menu2 {
     float: right;
-/*    top:-40px;*/
     padding-right: 0px;
+    
 }
+
+/***************************************/
+
+
+/***************************************/
 
 #spacer {
     height: 50px;
@@ -58,43 +64,114 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
-
+/************/
+#navbar.navbar-fixed {
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:15px;
+}
+#navbar.navbar-absolute {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:15px;
+}
 
 /*
-.btn {
-  background: #F0F8FF;
-  background-image: -webkit-linear-gradient(top, #F0F8FF, #F0F8FF);
-  background-image: -moz-linear-gradient(top, #F0F8FF, #F0F8FF);
-  background-image: -ms-linear-gradient(top, #F0F8FF, #F0F8FF);
-  background-image: -o-linear-gradient(top, #F0F8FF, #F0F8FF);
-  background-image: linear-gradient(to bottom, #F0F8FF, #F0F8FF);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+#navbar ul,li,a {
+    display: inline;
+    text-decoration: none;
+    color: dimgray;
 }
-
-.btn:hover {
-  background: #F0F8FF;
-  background-image: -webkit-linear-gradient(top, #F0F8FF, #FFFFFF);
-  background-image: -moz-linear-gradient(top, #F0F8FF, #FFFFFF);
-  background-image: -ms-linear-gradient(top, #F0F8FF, #FFFFFF);
-  background-image: -o-linear-gradient(top, #F0F8FF, #FFFFFF);
-  background-image: linear-gradient(to bottom, #F0F8FF, #FFFFFF);
-  text-decoration: none;
-}
-
 */
 
-a.button {
+#navbar ul
+{
+	list-style:none;
+	position:relative;
+/*	float:right;*/
+	margin:0;
+	padding:0;
+}
+
+#navbar ul a
+{
+	display:block;
+/*	color:#333;*/
+    
+	text-decoration:none;
+	font-weight:700;
+	font-size:13px;
+	line-height:32px;
+	padding:0 20px 3px;
+/*    color: dimgray;*/
+}
+
+#navbar ul li
+{
+	
+    position:relative;
+	float:right;
+	margin:0;
+	padding:0px;
+}
+
+#navbar ul li:hover > ul
+{
+	display:block;
+}
+/*.icon-link-1*/
+#navbar ul ul
+{
+/*	display:none;*/
+/*    background-color: rgba(0,0,0,0.9);*/
+	position:absolute;
+	top:46%;
+	right:0px;
+/*	background:#fff;*/
+	padding-top:0px;
+}
+
+#navbar ul ul.icon-link-1{
+    right:120px;
+}
+
+#navbar ul ul.icon-link-2{
+    right:60px;
+}
+
+#navbar ul ul.icon-link-3{
+    right:0px;
+}
+
+ #navbar ul ul li
+{
+    background-color: rgba(0,0,0,0.5);
+	float:none;
+	width:60px;
+    height:60px;
+/*    height:100px;*/
+} 
+
+#navbar ul ul a
+{
+    
+	line-height:120%;
+	padding:10px 11px;
+    float:none;
+}
+
+#navbar ul ul ul
+{
+	top:0;
+	right:100%
+} 
+
+a.button, a.dropdown-array {
     position:relative;
     /* It seems as though this -40px is to counter the 40 px bottom padding under #navbar?*/
-    top:-40px;
+    top:0px;
 /*
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -134,6 +211,7 @@ a.button {
     -o-transition: 1s linear;
     -webkit-transition: 1s linear;
     transition: 1s linear;
+    
 }
 
 a.button:hover {
@@ -148,34 +226,33 @@ a.button:hover {
 */
 }
 
-/*
-.navbar-fixed {
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-}
-*/
-#navbar.navbar-fixed {
-    position:fixed;
-    top:0px;
-    width:100%;
-    height:15px;
-}
-#navbar.navbar-absolute {
-    position:absolute;
-    top:0px;
-    width:100%;
-    height:15px;
+a.sub-button {
+    position:relative;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    color: #ffffff;
+    padding: 20px 20px 10px 20px;
+    
+    line-height: 0em;
+    display: block;
+    float:right;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    
+    -moz-transition: 1s linear;
+    -ms-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
 
-#navbar ul,li,a {
-    display: inline;
-/*    padding-left: 10px;*/
-    text-decoration: none;
-    color: dimgray;
-/*    position: fixed;*/
+a.sub-button:hover {
+    background-color: #000000;
 }
+
+/**/
 
 .jumbotron {
 /*    background-color: cornflowerblue;*/
