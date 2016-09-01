@@ -68,7 +68,8 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    min-width: 1000px;
+    min-width: 800px;
+    background-color: #eee;
 }
 
 .header-text {
@@ -275,6 +276,7 @@ a.sub-button:hover {
     position: relative;
     top: 0px;
     padding: 75px 0px 300px 0px;
+    min-width:800px;
 }
 
 /*index.html CSS*/
@@ -323,7 +325,7 @@ a.sub-button:hover {
 /*    position: absolute;*/
     position: relative;
     margin: 50px 60px 0px 60px;
-    min-width: 1000px;
+    min-width: 600px;
 /*    width:1200px;*/
     
 }
@@ -332,8 +334,8 @@ a.sub-button:hover {
     padding-top: 58px;
     float:left;
 /*    margin-left:5%;*/
-    min-width: 300px;
     width:68%;
+    min-width: 270px;
 /*    margin-right: 700px;*/
 }
 .project .project-description {
@@ -356,15 +358,34 @@ a.sub-button:hover {
 /*    overflow: auto;*/
     
     position:relative;
+/*
     border: solid 0.01em;
     border-color: lightgray;
-/*    border-radius: 3%;*/
+*/
+    border-radius: 0 0 5px 5px;
+/*
     -moz-box-shadow:    5px 5px 5px 1px #ccc;
     -webkit-box-shadow: 5px 5px 5px 1px #ccc;
     box-shadow:         5px 5px 5px 1px #ccc;
+*/
+    
+    -moz-box-shadow:    0 0 1em #ccc;
+    -webkit-box-shadow: 0 0 1em #ccc;
+    box-shadow:         0 0 1em #ccc;
+   
 /*    padding:5px 5px 5px 5px*/
     background-color: rgb(255,255,255,0.8);
+/*    background-color:red;*/
 }
+
+/*
+.project-container:hover {
+    border-color: cyan;
+    -moz-box-shadow:    2px 2px 5px 1px cyan;
+    -webkit-box-shadow: 2px 2px 5px 1px cyan;
+    box-shadow:         2px 2px 5px 1px cyan;
+}
+*/
 
 .project-container .project-image-container {
     width: 256px;
@@ -372,6 +393,7 @@ a.sub-button:hover {
     background-size: cover;
     margin-bottom: 0;
     padding-bottom: 0;
+/*    border-radius: 2%;*/
 /*
     border-bottom: solid 0.01em;
     border-bottom-color: #00FFFF;
@@ -385,6 +407,7 @@ a.sub-button:hover {
     background-size: cover;
     margin-bottom: 0;
     padding-bottom: 0;
+/*    border-radius: 2%;*/
 /*    line-height: 0px;*/
     
 }
@@ -392,7 +415,7 @@ a.sub-button:hover {
 /*    float:top;*/
 /*    vertical-align: top;*/
     height: 10px;
-    margin-top: -17px;
+    margin-top: -18px;
     padding-bottom: 0px;
     line-height: 0px;
     text-align:center;
@@ -408,13 +431,14 @@ a.sub-button:hover {
 }
 
 .item-image {
+/*    background-color: cyan;*/
     background-color: white;
     display: inline-block;
 /*    border-radius: 3%;*/
 }
 
 .item-image img:hover{
-    opacity: .3;
+    opacity: .4;
 }
 
 
