@@ -321,8 +321,17 @@ a.sub-button:hover {
     left: -20px;
     white-space: nowrap;
 }
+
+
+
+
+
+
+
+
 /*Project CSS*/
 /*Work on fixed width project info boxes*/
+
 .project {
 /*    position: absolute;*/
     position: relative;
@@ -444,6 +453,99 @@ a.sub-button:hover {
     opacity: .4;
 }
 
+.description {
+    display: none;
+}
+
+
+
+
+
+
+
+/*Gallery CSS*/
+
+.photo {
+/*    position: absolute;*/
+    position: relative;
+    margin: 50px 60px 0px 60px;
+    min-width: 600px;
+/*    width:1200px;*/
+    
+}
+
+.photo .photo-preview {
+    padding-top: 58px;
+    float:left;
+/*    margin-left:5%;*/
+    width:68%;
+    min-width: 270px;
+/*    margin-right: 700px;*/
+}
+
+.photo .photo-description {
+    float:right;
+/*    margin-right:5%;*/
+    width:30%;
+    top:20px;
+    min-height: 600px;
+}
+
+.photo-container {
+    float: left;
+    width: 256px;
+    height: 180px;
+    
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+    position:relative;
+    border-radius: 0 0 5px 5px;
+    
+    -moz-box-shadow:    0 0 1em #ccc;
+    -webkit-box-shadow: 0 0 1em #ccc;
+    box-shadow:         0 0 1em #ccc;
+   
+    background-color: rgb(255,255,255,0.8);
+}
+
+.photo-container .photo-image-container {
+    width: 256px;
+    height: 180px;
+    background-size: contain;
+/*    max-height:100%; max-width:100%;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.photo-container .photo-image-container .photo-image {
+/*    height: 100%; */
+    width: 100%; 
+    background-size: contain;
+    
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+/*    border-radius: 2%;*/
+/*    line-height: 0px;*/
+    
+}
+
+
+/*
+.project-container:hover {
+    border-color: cyan;
+    -moz-box-shadow:    2px 2px 5px 1px cyan;
+    -webkit-box-shadow: 2px 2px 5px 1px cyan;
+    box-shadow:         2px 2px 5px 1px cyan;
+}
+
+
+
+
+
+/*Unused/*
 /*
 .tweetspace-description {
     display:none;

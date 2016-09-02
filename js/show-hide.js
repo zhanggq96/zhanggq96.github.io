@@ -2,8 +2,8 @@ jQuery(function(){
          jQuery('#showall').click(function(){
                jQuery('.description').show();
         });
-        jQuery('.project-container').click(function(){
+        jQuery('.container').click(function(){
               jQuery('.description').hide();
-              jQuery('#project'+$(this).attr('target')).show();
+              jQuery('#item'+$(this).attr('target')).show();
         });
 });
