@@ -283,10 +283,12 @@ a.sub-button:hover {
 
 
 
-.jumbotron h1,h4 {
+.jumbotron h1 {
     text-align: center;
-    color: aliceblue;
-    text-shadow: 1px 1px grey;
+    color: white;
+/*    text-shadow: 1px 1px grey;*/
+    font-size: 24px;
+    margin: 0px;
 }
 
 .section{
@@ -343,6 +345,7 @@ a.sub-button:hover {
 /*    margin-right:5%;*/
     width:30%;
     top:20px;
+    min-height: 600px;
 }
 
 /*Container CSS*/
@@ -441,7 +444,13 @@ a.sub-button:hover {
     opacity: .4;
 }
 
+/*
+.tweetspace-description {
+    display:none;
+}
 
+
+*/
 /*
 .self-image .self-name{
     position: absolute;

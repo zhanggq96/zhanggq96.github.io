@@ -8,22 +8,13 @@
         <script src="jquery/jquery-3.1.0.min.js"></script>
         <script src="js/data-load.js"></script>
         
-        <script type="text/javascript">
-        <!--
-            function toggle_visibility(id) {
-               var e = document.getElementById(id);
-               if(e.style.display == 'block')
-                  e.style.display = 'none';
-               else
-                  e.style.display = 'block';
-            }
-        //-->
-        </script>
+        
+        <script src="js/show-hide.js"></script>
         
         <nav data-load="html/load.html"></nav>
         
         <Title>
-            Home
+            Projects
         </Title>
     </head>
     
@@ -34,13 +25,14 @@
             <div class="project">
                 
                 <div class="project-preview">
-                    <span class="project-container">
+                    <div class="project-container" target="1">
                         
-                        <div class="project-image-container item-image tweetspace" id="tweetspace" ><img src="images/tweetspace.jpg" class="project-image"></div>
+                        <div class="project-image-container item-image tweetspace" id="tweetspace"><img src="images/tweetspace.jpg" class="project-image"></div>
                         <div class="project-name" "item-name"><h6 class="header-text">Tweetspace</h6></div>
 <!--                        <div class="shadow"></div>-->
-                    </span>
-                    <div class="project-container">
+<!--                        <a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>-->
+                    </div>
+                    <div class="project-container" target="2">
                         <div class="project-image-container item-image rhythm-drive" id="rhythm-drive"><img src="images/rhythm-drive.png" class="project-image"></div>
                         <div class="project-name" "item-name"><h6 class="header-text">Rhythm Drive</h6></div>
                     </div>
@@ -49,17 +41,17 @@
                     </div>
                 </div>
                 <div class="project-description">
-                    <div class="tweetspace tweetspace-description">
+                    <div class="tweetspace description" id="project1">
                         <h3 class="header-text">Tweetspace</h3>
                         <h5 class="header-text">January 2016</h5>
                         <p>A program that retrieves specified tweets based on time and location, then performs sentiment analysis on them. </p>
                         <p>A hackathon project made in collaboration with David Zhang (Twitter API retrieval + backend, C#) and Jack Yan (Interface, ASP.net). I worked on natural language sentiment analysis using Python library nltk.</p>
                     </div>
                     
-                    <div class="rhythm-drive rhythm-drive-description">
+                    <div class="rhythm-drive description" id="project2">
                         <h3 class="header-text">Rhythm Drive</h3>
                         <h5 class="header-text">May 2014</h5>
-                        <p>A basic guitar-hero rhythm game styled like osu! mania.</p>
+                        <p>A basic guitar hero-rhythm game styled like osu! mania.</p>
                         <p>High school project, made with Gary Eng. Programmed in Java using Slick2D.</p>
                     </div>
                     
