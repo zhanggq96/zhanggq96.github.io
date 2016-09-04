@@ -70,6 +70,7 @@ body {
     margin: 0px;
     min-width: 800px;
     background-color: #eee;
+/*    line-height: 1.;*/
 }
 
 .header-text {
@@ -480,6 +481,8 @@ a.sub-button:hover {
 /*    margin-left:5%;*/
     width:68%;
     min-width: 270px;
+    max-height: 500px;
+    overflow: auto;
 /*    margin-right: 700px;*/
 }
 
