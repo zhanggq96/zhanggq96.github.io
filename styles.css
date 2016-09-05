@@ -471,12 +471,13 @@ a.sub-button:hover {
     position: relative;
     margin: 50px 60px 0px 60px;
     min-width: 600px;
+    min-height: 700px;
 /*    width:1200px;*/
     
 }
 
 .photo .photo-preview {
-    padding-top: 58px;
+/*    padding-top: 45px;*/
     float:left;
 /*    margin-left:5%;*/
     width:68%;
@@ -490,6 +491,7 @@ a.sub-button:hover {
     float:right;
 /*    margin-right:5%;*/
     width:30%;
+    min-width: 400px;
     top:20px;
     min-height: 600px;
 }
@@ -534,6 +536,50 @@ a.sub-button:hover {
 /*    line-height: 0px;*/
     
 }
+
+.photo-description .photo-image-container {
+    width: inherit;
+    height: ;
+    background-size: contain;
+/*    max-height:100%; max-width:100%;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.photo-description .photo-image-container .photo-image {
+/*    height: 100%; */
+    width: 100%; 
+    background-size: contain;
+    
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+/*    border-radius: 2%;*/
+/*    line-height: 0px;*/
+    
+}
+
+.metadata {
+    line-height: 0px;
+}
+
+.metadata .metadata-tag::before {
+    content: "Metadata (if relevant) ";
+    line-height: 20px;
+}
+
+.metadata .location::before {
+    content: "Location: ";
+}
+
+.metadata .date::before {
+    content: "Date: ";
+}
+
+.photo-description .description p {
+    min-height: 200px;
+} 
 
 
 /*

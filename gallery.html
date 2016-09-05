@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="utf-8">
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=OpenSans">
@@ -21,36 +22,102 @@
     <body onload="javascript:window_onload();">
         <nav data-load="html/jumbotron.html"></nav>
         
+        
+        
         <div class="main">
             <div class="photo">
                 
+                <h2>Photos</h2>
+                
                 <div class="photo-preview">
-                    <div class="container photo-container tweetspace" target="1">
+                    
+                    <div class="container photo-container" target="0">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/qhD04Fmm.jpg" class="photo-image"></div>
+                    </div>
+                    
+                    <div class="container photo-container" target="1">
                         
-                        <div class="photo-image-container item-image" id="tweetspace"><img src="https://tse2-mm.cn.bing.net/th?id=OIP.Me3aa48fd5e4f3e6efd5fd6317d185076o0&pid=15.1" class="photo-image"></div>
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/OpbBWijm.jpg"></div>
 <!--                        <div class="shadow"></div>-->
 <!--                        <a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>-->
                     </div>
-                    <div class="container photo-container rhythm-drive" target="2">
-                        <div class="photo-image-container item-image" id="rhythm-drive"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Hello_World%21_in_Visual_Basic_%28classic%29.png" class="photo-image"></div>
+                    <div class="container photo-container" target="2">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/YoTSskpm.jpg" class="photo-image"></div>
                     </div>
-                    <div class="photo-container">
-                        
+                    <div class="container photo-container" target="3">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/nmXTIfmm.jpg" class="photo-image"></div>
+                    </div>
+                    <div class="container photo-container" target="4">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/aNbW8SZm.jpg" class="photo-image"></div>
+                    </div>
+                    <div class="container photo-container" target="5">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/t0gxbwvm.jpg" class="photo-image"></div>
                     </div>
                 </div>
                 <div class="photo-description">
-                    <div class="tweetspace description" id="item1">
-                        <h3 class="header-text">Hello World</h3>
-                        <h5 class="header-text"> </h5>
-                        <p>TODO: Make Gallery photo-description scroll along with the page.</p>
+                    
+                    <div class="description" id="item0">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/qhD04Fm.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location">Hamilton</h5>
+                            <h5 class="header-text date"></h5>
+                        </div>
+                        <p>Rail Trail</p>
+                        
                     </div>
                     
-                    <div class="rhythm-drive description" id="item2">
-                        <h3 class="header-text">Hello World 2</h3>
-                        <h5 class="header-text"> </h5>
-                        <p>Hello World #2</p>
+                    <div class="description" id="item1">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/OpbBWijl.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location">Qinhuangdao, China.</h5>
+                            <h5 class="header-text date">August 2016</h5>
+                        </div>
+                        <p>秦皇岛 (Qinghuangdao) Shore</p>
+                        
                     </div>
                     
+                    <div class="description" id="item2">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/YoTSskpl.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location"></h5>
+                            <h5 class="header-text date">August 2016</h5>
+                        </div>
+                        <p></p>
+                    </div>
+                    
+                    <div class="description" id="item3">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/nmXTIfml.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location"></h5>
+                            <h5 class="header-text date">August 2016</h5>
+                        </div>
+                        <p></p>
+                    </div>
+                    
+                    <div class="description" id="item4">
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/aNbW8SZl.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location">广安门内 (Guang An Men Nei), Beijing, China.</h5>
+                            <h5 class="header-text date">August 2016</h5>
+                        </div>
+                        <p></p>
+                    </div>
+                    
+                    <div class="description" id="item5">
+<!--                        Using original size image - test-->
+                        <div class="photo-image-container item-image"><img src="http://i.imgur.com/t0gxbwv.jpg" class="photo-image"></div>
+                        <div class="metadata">
+                            <h3 class="header-text metadata-tag"></h3>
+                            <h5 class="header-text location">广安门内 (Guang An Men Nei), Beijing, China.</h5>
+                            <h5 class="header-text date">August 2016</h5>
+                        </div>
+                        <p>Testing using an original size image here - can take a long time to load on slow connections</p>
+                    </div>
                     
                 </div>
             </div>
