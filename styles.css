@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
 /*
 padding:10px 5px 15px 20px;
 top padding is 10px
@@ -63,7 +65,7 @@ html {
 }
 
 body {
-    font-family: "Open Sans", "Verdana", sans-serif;
+    font-family: "Open Sans", "Microsoft JhengHei", "Verdana", sans-serif;
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -117,8 +119,7 @@ body {
 	padding:0;
 }
 
-#navbar ul a
-{
+#navbar ul a {
 	display:block;
 /*	color:#333;*/
     
@@ -130,8 +131,7 @@ body {
 /*    color: dimgray;*/
 }
 
-#navbar ul li
-{
+#navbar ul li {
 	
     position:relative;
 	float:right;
@@ -139,13 +139,11 @@ body {
 	padding:0px;
 }
 
-#navbar ul li:hover > ul
-{
+#navbar ul li:hover > ul {
 	display:block;
 }
 /*.icon-link-1*/
-#navbar ul ul
-{
+#navbar ul ul {
 	display:none;
 /*    background-color: rgba(0,0,0,0.9);*/
 	position:absolute;
@@ -155,20 +153,19 @@ body {
 	padding-top:0px;
 }
 
-#navbar ul ul.icon-link-1{
+#navbar ul ul.icon-link-1 {
     right:120px;
 }
 
-#navbar ul ul.icon-link-2{
+#navbar ul ul.icon-link-2 {
     right:60px;
 }
 
-#navbar ul ul.icon-link-3{
+#navbar ul ul.icon-link-3 {
     right:0px;
 }
 
- #navbar ul ul li
-{
+#navbar ul ul li {
     background-color: rgba(0,0,0,0.5);
 	float:none;
 	width:60px;
@@ -176,8 +173,7 @@ body {
 /*    height:100px;*/
 } 
 
-#navbar ul ul a
-{
+#navbar ul ul a {
     
 	line-height:120%;
 	padding:10px 11px;
@@ -272,11 +268,12 @@ a.sub-button:hover {
 
 .jumbotron {
 /*    background-color: cornflowerblue;*/
-    background-image: url(images/skateboard_banner.jpg);
+/*    background-image: url(images/skateboard_banner.jpg);*/
+    background-image: url(images/jumbotron2.jpg);
     background-size: cover;
     position: relative;
     top: 0px;
-    padding: 75px 0px 300px 0px;
+    padding: 75px 0px 500px 0px;
     min-width:800px;
 }
 
@@ -324,7 +321,12 @@ a.sub-button:hover {
 }
 
 
-
+.code {
+    background-color: lightgray;
+    font-family: "Courier New", "Consolas", "sans-serif";
+    margin-left: 50px;
+    width: 650px;
+}
 
 
 
@@ -443,6 +445,8 @@ a.sub-button:hover {
 /*    top:20px;*/
 }
 
+
+/*Also applies to gallery*/
 .item-image {
 /*    background-color: cyan;*/
     background-color: white;
@@ -466,37 +470,45 @@ a.sub-button:hover {
 
 /*Gallery CSS*/
 
-.photo {
+.image {
 /*    position: absolute;*/
     position: relative;
     margin: 50px 60px 0px 60px;
-    min-width: 600px;
+    min-width: 1250px;
     min-height: 700px;
 /*    width:1200px;*/
     
 }
 
-.photo .photo-preview {
+/*
+.image {
+    margin-bottom: 200px;
+}
+*/
+
+.image .image-preview {
 /*    padding-top: 45px;*/
     float:left;
 /*    margin-left:5%;*/
     width:68%;
     min-width: 270px;
-    max-height: 500px;
+    max-height: 900px;
     overflow: auto;
 /*    margin-right: 700px;*/
 }
 
-.photo .photo-description {
+.image .image-description {
     float:right;
 /*    margin-right:5%;*/
     width:30%;
     min-width: 400px;
     top:20px;
     min-height: 600px;
+    max-height: 600px;
+/*    overflow: auto;*/
 }
 
-.photo-container {
+.image-container {
     float: left;
     width: 256px;
     height: 180px;
@@ -514,7 +526,7 @@ a.sub-button:hover {
     background-color: rgb(255,255,255,0.8);
 }
 
-.photo-container .photo-image-container {
+.image-container .image-image-container {
     width: 256px;
     height: 180px;
     background-size: contain;
@@ -522,9 +534,16 @@ a.sub-button:hover {
     margin-bottom: 0;
     padding-bottom: 0;
     overflow: hidden;
+    
+/*
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+*/
+    
 }
 
-.photo-container .photo-image-container .photo-image {
+.image-container .image-image-container .image-image {
 /*    height: 100%; */
     width: 100%; 
     background-size: contain;
@@ -537,7 +556,7 @@ a.sub-button:hover {
     
 }
 
-.photo-description .photo-image-container {
+.image-description .image-image-container {
     width: inherit;
     height: ;
     background-size: contain;
@@ -547,7 +566,7 @@ a.sub-button:hover {
     overflow: hidden;
 }
 
-.photo-description .photo-image-container .photo-image {
+.image-description .image-image-container .image-image {
 /*    height: 100%; */
     width: 100%; 
     background-size: contain;
@@ -561,23 +580,36 @@ a.sub-button:hover {
 }
 
 .metadata {
-    line-height: 0px;
+/*    line-height: 0px;*/
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
 }
 
 .metadata .metadata-tag::before {
     content: "Metadata (if relevant) ";
-    line-height: 20px;
+}
+
+.metadata .name::before {
+    content: ""
+}
+
+.metadata .location {
+    margin-top: -10px;
 }
 
 .metadata .location::before {
     content: "Location: ";
 }
 
+.metadata .date {
+    margin-top: -15px;
+}
+
 .metadata .date::before {
     content: "Date: ";
 }
 
-.photo-description .description p {
+.image-description .description p {
     min-height: 200px;
 } 
 

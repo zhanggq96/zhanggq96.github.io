@@ -1,0 +1,21 @@
+
+Image preview
+
+<div class="container image-container" type="misc" target="">
+	<div class="image-image-container item-image"><img src="" class="image-image"></div>
+</div>
+
+----------------------------------------
+
+Image desc
+
+<div class="description" id="item">
+	<div class="image-image-container item-image"><img src="" class="image-image"></div>
+	<div class="metadata">
+		<h3 class="header-text metadata-tag"></h3>
+		<h5 class="header-text location"></h5>
+		<h5 class="header-text date"></h5>
+	</div>
+	<p></p>
+</div>
+
