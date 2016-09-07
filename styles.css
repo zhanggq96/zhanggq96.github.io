@@ -385,7 +385,7 @@ a.sub-button:hover {
     border: solid 0.01em;
     border-color: lightgray;
 */
-    border-radius: 0 0 5px 5px;
+/*    border-radius: 0 0 5px 5px;*/
 /*
     -moz-box-shadow:    5px 5px 5px 1px #ccc;
     -webkit-box-shadow: 5px 5px 5px 1px #ccc;
@@ -524,8 +524,8 @@ a.sub-button:hover {
     margin-bottom: 20px;
     margin-right: 20px;
     
-    position:relative;
-    border-radius: 0 0 5px 5px;
+    position: relative;
+/*    border-radius: 0 0 5px 5px;*/
     
     -moz-box-shadow:    0 0 1em #ccc;
     -webkit-box-shadow: 0 0 1em #ccc;
@@ -634,6 +634,33 @@ a.sub-button:hover {
     box-shadow:         2px 2px 5px 1px cyan;
 }
 
+/*Blog CSS*/
+
+.blog-post {
+    position: relative;
+}
+
+.container-icon {
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.container-icon #code-icon {
+    content:url(logos/logos-programming.png);
+/*    border-radius: 50%;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.container-icon .container-name{
+    position: absolute;
+    top: 80px;
+/*    left: -13px; Open sans*/
+    left: 25px;
+    white-space: nowrap;
+}
 
 
 
