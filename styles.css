@@ -482,10 +482,13 @@ a.sub-button:hover {
 /*    position: absolute;*/
     position: relative;
     margin: 50px 60px 0px 60px;
-    min-width: 1250px;
-    min-height: 700px;
+/*    min-width: 1250px;*/
+    min-width: 600px;
+/*    min-height: 700px;*/
 /*    width:1200px;*/
-    
+/*    overflow:auto;*/
+    margin-bottom: 200px;
+    overflow: hidden;
 }
 
 /*
@@ -509,7 +512,7 @@ a.sub-button:hover {
     float:right;
 /*    margin-right:5%;*/
     width:30%;
-    min-width: 400px;
+/*    min-width: 400px;*/
     top:20px;
     min-height: 600px;
     max-height: 600px;
@@ -625,6 +628,11 @@ a.sub-button:hover {
     min-height: 200px;
 } 
 
+/*
+.left-float {
+    float:left;
+}
+*/
 
 /*
 .project-container:hover {

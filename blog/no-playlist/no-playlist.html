@@ -2,7 +2,7 @@
 <html>
     <h3 class=header-text>No Playlist</h3>
     
-    <p>I find it annoying how, when clicking on a Youtube video in a playlist, there is no way to load the video without loading it inside the playlist. Most of the time, I just want to watch that single video I have saved in my list (which I use more as a reference list rather than an actual playlist). So I decided to make a chrome extension to solve that issue. It turned out to be very easy.</p>
+    <p>I find it annoying how, when clicking on a Youtube video in a playlist, there is no way to load the video without loading it inside the playlist. I use the playlist feature more as a reference list than an actual playlist; most of the time, I just want to rewatch that single video I have saved. So I decided to make a chrome extension to solve that issue. It turned out to be very easy.</p>
     
     <p>When clicking on a video link in a playlist, Youtube appends a playlist link to the end of the URL:</p>
     
@@ -45,6 +45,6 @@
     
     <p>As I mentioned earlier, what I did here was have the extension remove the "&amp;list*" portion of the URL. I loop through all the hyperlinks in the youtube page, and if they contain a youtube video with a playlist link, it removes the playlist link with the help of a substring method. If you uncomment console.log(links2[i].href);, you can see this in action in chrome's developer console. </p>
     
-    <p>This definitely isn't an efficient or user-friendly method, but as a hack it works well enough. All in all, this was pretty straightforward. It took me much longer than it should have, probably.</p>
+    <p>This definitely isn't an efficient or user-friendly method, but as a hack it works well enough. All in all, this was pretty straightforward; it took me much longer than it should have to make this, probably.</p>
     
 </html>
