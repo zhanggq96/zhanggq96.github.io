@@ -1,1 +1,575 @@
-[{"anime_url":"https://myanimelist.net/anime/31452/Norn9__Norn_Nonet","name":"Norn9: Norn+Nonet","image_url":"https%3A//myanimelist.cdn-dena.com/images/anime/4/77974.jpg","synopsis":"The story takes place a little in the future. Guided by one particular song, young elementary school student Suzuhara Sorata, from the Heisei Era, is warped through a time skip to an unfamiliar place that looks much like the towns from the Meiji or Taishou period from his textbooks. In this world, he meets three young ladies and nine young men and joins them on a journey aboard the mysterious Norn ship, a giant globe that floats in midair."},{"anime_url":"https://myanimelist.net/anime/2994/Death_Note_Rewrite","name":"Death Note Rewrite","image_url":"https%3A//myanimelist.cdn-dena.com/images/anime/13/8518.jpg","synopsis":"1. Genshisuru Kami (Visions of a God) A two hour episode of Death Note, mainly a compilation of the confrontations between Light and L, re-edited from Ryuk's perspective with new dialogue and soundtrack along with additional animation that could not be included in the original series. An Unnamed Shinigami comes to Ryuk to question him about his new story in the human world. 2. L o Tsugu Mono (L's Successors) This story continues where the previous left off, continuing the story of Light. As the previous special told Light and L's battles, this story does the same with the conflicts between Light, Mello, and Near. (Source: Wikipedia)"},{"anime_url":"https://myanimelist.net/anime/9062/Angel_Beats_Specials","name":"Angel Beats! Specials","image_url":"https%3A//myanimelist.cdn-dena.com/images/anime/4/25073.jpg","synopsis":"Unaired episodes of Angel Beats! included in the seventh volume of the Blu-ray and DVD, and another included in the Blu-ray Box."}]
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>3SK3 Project 2</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-03-21"><meta name="DC.source" content="project2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>3SK3 Project 2</h1><!--introduction--><p>George Zhang 1416074</p><p>For project two, we extend project one to include the use of variance and gradient as means to validate whether a template is contained in a reference image. We use the same algorithms to build the original summed value table and three new summed value tables (L2, LX, LY) for computing variance and gradient efficiently.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Part 1: Initialization</a></li><li><a href="#3">Part 2: Generating sum tables</a></li><li><a href="#5">Part 3: Searching image for template</a></li><li><a href="#7">Part 4: Extra results from code:</a></li><li><a href="#8">Part 5: Complexity analysis</a></li><li><a href="#9">Part 6: Question</a></li></ul></div><h2>Part 1: Initialization<a name="1"></a></h2><p>We will use int64 for the summed value tables and double (float64) for our subsequent calculations.</p><pre class="codeinput">clear ; close <span class="string">all</span>; clc
+
+disp(<span class="string">'Initializting...'</span>)
+image_file = <span class="string">'mcmaster_reference.png'</span>;
+search_file = <span class="string">'mcmaster_template.png'</span>;
+<span class="comment">% image_file = 'sample.png';</span>
+<span class="comment">% search_file = 'search.png';</span>
+
+image = imread(image_file);
+image = rgb2gray(image);
+highlighted_image = image;
+
+search = imread(search_file);
+search = rgb2gray(search);
+
+<span class="comment">% Search image diemsions</span>
+m_s = size(search, 1);
+n_s = size(search, 2);
+search_pixels = double(m_s*n_s);
+
+<span class="comment">% Bigger image dimensions</span>
+x = size(image, 1);
+y = size(image, 2);
+
+<span class="comment">% We only deal with Jx = Jy</span>
+Jx = m_s;
+Jy = n_s;
+
+<span class="comment">% Sum tables:</span>
+L1 = int64(zeros(x,y));
+L2 = int64(zeros(x,y));
+LX = int64(zeros(x,y));
+LY = int64(zeros(x,y));
+
+disp(<span class="string">'Done Initializing.'</span>)
+</pre><h2>Part 2: Generating sum tables<a name="3"></a></h2><p>The idea behind generating the summed value tables is the same as project 1; we use a reccurence relation</p><p><img src="project2_eq15794048909463762075.png" alt="$$ L(i,j) = L(m-1, n) + n_{sum} $$"></p><p>to calculate them efficiently through the use of previously calculated values in the table. The tables (L1, L2, LX, LY) have been named in accordance to the project requirements file on avenue to learn.</p><pre class="codeinput">disp(<span class="string">'Generating sum table...'</span>)
+<span class="comment">% Generate sum table</span>
+<span class="keyword">for</span> i = 1:x
+    n_sum_L1 = int64(0);
+    n_sum_L2 = int64(0);
+    n_sum_LX = int64(0);
+    n_sum_LY = int64(0);
+    <span class="keyword">for</span> j = 1:y
+        n_sum_L1 = n_sum_L1 + int64(image(i,j));
+        n_sum_L2 = n_sum_L2 + int64(image(i,j))^2;
+        n_sum_LX = n_sum_LX + i*int64(image(i,j));
+        n_sum_LY = n_sum_LY + j*int64(image(i,j));
+        <span class="keyword">if</span> i ~= 1
+            L1(i,j) = L1(i-1,j) + n_sum_L1;
+            L2(i,j) = L2(i-1,j) + n_sum_L2;
+            LX(i,j) = LX(i-1,j) + n_sum_LX;
+            LY(i,j) = LY(i-1,j) + n_sum_LY;
+        <span class="keyword">else</span>
+            L1(i,j) = n_sum_L1;
+            L2(i,j) = n_sum_L2;
+            LX(i,j) = n_sum_LX;
+            LY(i,j) = n_sum_LY;
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+disp(<span class="string">'Done enerating sum table.'</span>)
+</pre><h2>Part 3: Searching image for template<a name="5"></a></h2><p>In order to calculate variance and gradient from our sum tables, we must first derive a formula which has the variables in a proper form. Let us first consider variance. The variance of a random variable <img src="project2_eq09308501952180369774.png" alt="$$ X $$"> with mean <img src="project2_eq17546322257478858577.png" alt="$$ E[X] = \mu $$"> is defined as:</p><p><img src="project2_eq18271951984859623089.png" alt="$$ Var(X) = E[(X-\mu)^{2}] $$"></p><p>We don't have any way of calculating variance in this form. However, using properties of expectations, we can manipulate this formula as follows:</p><p><img src="project2_eq00261152681888825370.png" alt="$$ = E[(X-\mu)^{2}] $$"></p><p><img src="project2_eq14011145703218078842.png" alt="$$ = E[(X^2-XE[X] + E[X]^{2})] $$"></p><p>From linearity,</p><p><img src="project2_eq02849030331240142261.png" alt="$$ = E[X^2] - 2E[XE[X]] + E[E[X]^{2}] $$"></p><p>The expected value of an expectation is unchanged. In addition, we apply the outer expectation to the <img src="project2_eq05408957550189934886.png" alt="$$ XE[X] $$"> term:</p><p><img src="project2_eq08216495767825701396.png" alt="$$ = E[X^2] - 2E[X]E[X] + E[X]^{2} $$"></p><p><img src="project2_eq13694670770522584759.png" alt="$$ = E[X^2] - E[X]^2 $$"></p><p>Variance in this form can be calculated using the SVTs L1 and L2.</p><p>To calculate the gradients, suppose we had a JxJ template image. Then our LX table can generate for us an EP operator for a position <img src="project2_eq08207701417991346571.png" alt="$$ (i,j) $$"> which is offset by however far in <img src="project2_eq00578581347065015426.png" alt="$$ i $$"> we are in the image. So it is necessary to perform patch_grad_x = (LX_sum - (i-(Jx-1)/2) * L1_sum) (note the <img src="project2_eq04798430289593712882.png" alt="$$ i-(Jx-1)/2 $$">) to achieve the correct offset so the center of the EPx begins at in the center zero and extends to <img src="project2_eq10979923398376755258.png" alt="$$ \pm \frac{J+1}{2} $$"> on either end.</p><pre class="codeinput">patch_mean = double(zeros(x,y));
+search_mean = mean2(search);
+patch_var = double(zeros(x,y));
+search_var = var(single(search(:)), 1);
+count_project_1 = 0;
+count_project_2 = 0;
+
+<span class="comment">% patch_grad_x = double(zeros(x,y));</span>
+<span class="comment">% patch_grad_y = double(zeros(x,y));</span>
+patch_grad_mag = double(zeros(x,y));
+patch_grad_dir = double(zeros(x,y));
+
+search_grad_x = double(0);
+search_grad_y = double(0);
+
+<span class="comment">% Template gradient using naive method</span>
+<span class="keyword">for</span> i=1:Jx
+    <span class="keyword">for</span> j=1:Jy
+        search_grad_x = search_grad_x + (i - (Jx+1)/2)*double(search(i, j));
+        search_grad_y = search_grad_y + (j - (Jy+1)/2)*double(search(i, j));
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+search_grad_mag = sqrt(search_grad_x^2 + search_grad_y^2);
+search_grad_dir = atan2(search_grad_y, search_grad_x);
+
+<span class="comment">% Search for the template inside larger image</span>
+disp(<span class="string">'Performing image search...'</span>)
+<span class="keyword">for</span> i = m_s:x
+    <span class="keyword">for</span> j = n_s:y
+        <span class="comment">% If not searching edge of image</span>
+        <span class="keyword">if</span> i &gt; m_s &amp;&amp; j &gt; n_s
+            L1_sum = double(L1(i, j) - L1(i - m_s, j) - L1(i, j - n_s) + L1(i - m_s, j - n_s));
+            L2_sum = double(L2(i, j) - L2(i - m_s, j) - L2(i, j - n_s) + L2(i - m_s, j - n_s));
+
+            LX_sum = double(LX(i, j) - LX(i - m_s, j) - LX(i, j - n_s) + LX(i - m_s, j - n_s));
+            LY_sum = double(LY(i, j) - LY(i - m_s, j) - LY(i, j - n_s) + LY(i - m_s, j - n_s));
+        <span class="comment">% Searching along edges</span>
+        <span class="keyword">elseif</span> i &gt; m_s &amp;&amp; j == n_s
+            L1_sum = double(L1(i, j) - L1(i - m_s, j));
+            L2_sum = double(L2(i, j) - L2(i - m_s, j));
+
+            LX_sum = double(LX(i, j) - LX(i - m_s, j));
+            LY_sum = double(LY(i, j) - LY(i - m_s, j));
+        <span class="comment">% Searching along edges</span>
+        <span class="keyword">elseif</span> j &gt; n_s &amp;&amp; i == m_s
+            L1_sum = double(L1(i, j) - L1(i, j - n_s));
+            L2_sum = double(L2(i, j) - L2(i, j - n_s));
+
+            LX_sum = double(LX(i, j) - LX(i, j - n_s));
+            LY_sum = double(LY(i, j) - LY(i, j - n_s));
+        <span class="comment">% Searching along edges</span>
+        <span class="keyword">else</span>
+            L1_sum = double(L1(i, j));
+            L2_sum = double(L2(i, j));
+
+            LX_sum = double(LX(i, j));
+            LY_sum = double(LY(i, j));
+        <span class="keyword">end</span>
+        patch_mean(i,j) = L1_sum/search_pixels;
+        patch_var(i,j) = L2_sum/search_pixels - patch_mean(i,j)^2;
+
+        <span class="comment">% Optional: Normalized patch gradients (not used)</span>
+        <span class="comment">% patch_grad_x = (LX_sum - (Jx+1)/2 * L1_sum) / (L1_sum + i*j*(Jx+1)/2);</span>
+        <span class="comment">% patch_grad_y = (LY_sum - (Jy+1)/2 * L1_sum) / (L1_sum + i*j*(Jy+1)/2);</span>
+
+        <span class="comment">% Adjust the LX sum table's result by a factor using the L1 sum</span>
+        <span class="comment">% table to account for the fact that we want to convolve a matrix</span>
+        <span class="comment">% of the form</span>
+        <span class="comment">% -(J+1)/2, -(J+1)/2 + 1, ... , 0, ... , (J+1)/2 - 1,(J+1)/2</span>
+        <span class="comment">% rather than how LX sum stores the values at row i,</span>
+        <span class="comment">% -(J+1)/2 + i, -(J+1)/2 + 1 + i, ... , i, ... , (J+1)/2 - 1 +</span>
+        <span class="comment">% i,(J+1)/2 + i</span>
+
+        patch_grad_x = (LX_sum - (i-(Jx-1)/2) * L1_sum);
+        patch_grad_y = (LY_sum - (j-(Jy-1)/2) * L1_sum);
+        patch_grad_mag(i,j) = sqrt(patch_grad_x^2 + patch_grad_y^2);
+        patch_grad_dir(i,j) = atan2(patch_grad_y, patch_grad_x);
+
+        <span class="comment">% If the mean, variance, gradient magnitude and gradient direction</span>
+        <span class="comment">% of the patch and template are similar, detect a match</span>
+        <span class="keyword">if</span> abs(search_mean - patch_mean(i,j)) &lt; 0.001
+            count_project_1 = count_project_1 + 1;
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> abs(search_mean - patch_mean(i,j)) &lt; 0.001 &amp;&amp; abs((search_var - patch_var(i,j))/search_var) &lt; 0.005 <span class="keyword">...</span>
+                &amp;&amp; abs((search_grad_dir - patch_grad_dir(i,j))/search_grad_dir) &lt; 0.005 <span class="keyword">...</span>
+                &amp;&amp; abs((search_grad_mag - patch_grad_mag(i,j))/search_grad_mag) &lt; 0.005
+<span class="comment">%             mean = abs(search_mean - patch_mean(i,j))</span>
+<span class="comment">%             search_var;</span>
+<span class="comment">%             patch_var(i,j);</span>
+<span class="comment">%             variance = abs(search_var - patch_var(i,j));</span>
+            disp(<span class="string">'Image found at (x,y):'</span>)
+            disp(j-n_s)
+            disp(i-m_s)
+            count_project_2 = count_project_2 + 1;
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+disp(<span class="string">'Done performing image search.'</span>)
+</pre><h2>Part 4: Extra results from code:<a name="7"></a></h2><pre class="codeinput"><span class="comment">% How many times the image was found</span>
+disp(<span class="string">'How many times the image was found using old algorithm:'</span>)
+count_project_1
+disp(<span class="string">'How many times the image was found using new algorithm:'</span>)
+count_project_2
+<span class="comment">% imshow(highlighted_image);</span>
+</pre><h2>Part 5: Complexity analysis<a name="8"></a></h2><p>Generating the sum tables:</p><p>For an <img src="project2_eq01882343525194575284.png" alt="$$ m \times n $$"> image, the algorithm must loop through each pixel to compute the value of the sum table at <img src="project2_eq08207701417991346571.png" alt="$$ (i,j) $$">. It keeps a running sum (using previous values in the table) so regions do not need to be resummed. Thus the algorithm for the sum table generation runs in <img src="project2_eq02111330673763627887.png" alt="$$ O(mn) $$">. Note that all four sum tables are generated in the same way, so there is no need for special consideration.</p><p>For searching the reference for the template, suppose the template was <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> pixels. Then we must consider every <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> patch in the reference image - however, with the SVT, we can get the desired statistical value of the patch in constant time <img src="project2_eq01223915430997719868.png" alt="$$ O(1) $$"> independent of k. So if we want to do this for every <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> patch in an <img src="project2_eq01882343525194575284.png" alt="$$ m \times n $$"> image and assume <img src="project2_eq10430471245101711424.png" alt="$$ m, n &gt;&gt; k $$">, then the algorithm runs in <img src="project2_eq02111330673763627887.png" alt="$$ O(mn) $$">.</p><p>Advantages of this algorithm:</p><p>- Better runtime than naive approach if we want to search a large image for a template, or check an image against multiple templates.</p><p>- More statistical features means better identification of templates (i.e., fewer false positives).</p><p>Disadvantages:</p><p>- Slower and more complicated than a naive approach if we only have a small image or want to check a small region of a larger image for a template.</p><p>- Variance calculation using <img src="project2_eq12302955751300500705.png" alt="$$ E[X^2] - E[X]^2 $$"> is numerically unstable. Note that we are limited to calculating variance in this way because we are using the sum table approach. https://en.wikipedia.org/wiki/Variance#Definition &lt;- (Source for instability of variance calculation)</p><p>- Extra memory used by sum tables</p><h2>Part 6: Question<a name="9"></a></h2><p>The size limitation of signed uint32 extends from <img src="project2_eq10346711565062754484.png" alt="$$ 0 $$"> to <img src="project2_eq03678863987974274809.png" alt="$$ 2^{32}-1 $$">. Thus our sum tables LX and LY must not exceed <img src="project2_eq03678863987974274809.png" alt="$$ 2^{32}-1 $$">.</p><p>We are given a reference image of <img src="project2_eq00816659654487914682.png" alt="$$ 1024 \times 1024 $$"> pixels; suppose our template was <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> pixels. Let us initially construct an upper bound by contriving a worse-case scenario.</p><p>First, from the tutorial note 3SK3-proj2.pdf, there is a proof showing that for the table L1, it is always possible to find the correct statistical values relying on L1 even if there is integer overflow. However, this proof relies on the property</p><p><img src="project2_eq09448251850462966846.png" alt="$$ (D + A - B - C) \bmod b = D + A - B - C $$"></p><p>which will only hold if <img src="project2_eq07022748390781291192.png" alt="$$ D + A - B - C < b $$">. For L1, this is a reasonable assumption; for the worst-case scenario, a <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> patch of pixels with value 255, we would have to have <img src="project2_eq03265191282991194672.png" alt="$$ 255k^2 &gt; 2^{32} $$"> or <img src="project2_eq07384032819855712110.png" alt="$$ k &gt; 4105 $$"> to violate the condition. Most modern displays are less than 3840 pixels wide on the long edge.</p><p>For LX/Y, we use the same formula assumption and try to determine a new upper bound for k. Our worst-case scenario would be when we have a <img src="project2_eq09601322691330029049.png" alt="$$ k \times k $$"> patch of pixels with value 255 in the bottom right corner of LX/Y, so that <img src="project2_eq06428664872276845628.png" alt="$$ LX(1024,1024) $$"> is maximized. Our image matrix would look something like</p><p><img src="project2_eq09610347791459659859.png" alt="$$ I = \pmatrix{0 &amp; 0 &amp; \dots &amp; 0 &amp; \dots &amp; 0 &amp; 0\cr&#xA;                0 &amp; 0 &amp; \dots &amp; 0 &amp; \dots &amp; 0 &amp; 0\cr&#xA;                \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \cr&#xA;                0 &amp; 0 &amp; \dots &amp; (1024-k+1) \times 255 &amp; \dots &amp; (1024-k+1) \times 255 &amp; (1024-k+1) \times 255\cr&#xA;                \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \cr&#xA;                0 &amp; 0 &amp; \dots &amp; 1023 \times 255 &amp; \dots &amp; 1023 \times 255 &amp; 1023 \times 255\cr&#xA;                0 &amp; 0 &amp; \dots &amp; 1024 \times 255 &amp; \dots &amp; 1024 \times 255 &amp; 1024 \times 255\cr}$$"></p><p>For which the sum of the patch is</p><p><img src="project2_eq11983420112026177943.png" alt="$$2^{32} &gt; \sum_{i=1024-k+1}^{1024} 255 \times k \times i$$"></p><p><img src="project2_eq16144497342577948601.png" alt="$$2^{32} &gt; 255 \times k \times \sum_{i=1024-k+1}^{1024} i$$"></p><p>Using some sum identities this can be conveniently rewritten as</p><p><img src="project2_eq15996456140508992387.png" alt="$$ 2^{32} &gt; 255k\bigg(\frac{1024 \times 1023}{2} -&#xA;\frac{(1024-k)(1024-k-1)}{2}\bigg) $$"></p><p>which has the solution</p><p><img src="project2_eq04533624982775237017.png" alt="$$ k \leq 132. $$"></p><p>Thus, our template has a limit of <img src="project2_eq06156946106187016047.png" alt="$$ 132 \times 132 $$"> pixels.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 3SK3 Project 2
+% George Zhang
+% 1416074
+% 
+% For project two, we extend project one to include the use of variance and
+% gradient as means to validate whether a template is contained in a
+% reference image. We use the same algorithms to build the original summed
+% value table and three new summed value tables (L2, LX, LY) for computing
+% variance and gradient efficiently.
+
+%% Part 1: Initialization
+% We will use int64 for the summed value tables and double (float64) for
+% our subsequent calculations.
+
+%%
+clear ; close all; clc
+
+disp('Initializting...')
+image_file = 'mcmaster_reference.png';
+search_file = 'mcmaster_template.png';
+% image_file = 'sample.png';
+% search_file = 'search.png';
+
+image = imread(image_file);
+image = rgb2gray(image);
+highlighted_image = image;
+
+search = imread(search_file);
+search = rgb2gray(search);
+
+% Search image diemsions
+m_s = size(search, 1);
+n_s = size(search, 2);
+search_pixels = double(m_s*n_s);
+
+% Bigger image dimensions
+x = size(image, 1);
+y = size(image, 2);
+
+% We only deal with Jx = Jy
+Jx = m_s;
+Jy = n_s;
+
+% Sum tables:
+L1 = int64(zeros(x,y));
+L2 = int64(zeros(x,y));
+LX = int64(zeros(x,y));
+LY = int64(zeros(x,y));
+
+disp('Done Initializing.')
+
+
+%% Part 2: Generating sum tables
+% The idea behind generating the summed value tables is the same as project
+% 1; we use a reccurence relation 
+% 
+% $$ L(i,j) = L(m-1, n) + n_{sum} $$
+% 
+% to calculate them efficiently through the use of previously calculated
+% values in the table. The tables (L1, L2, LX, LY) have been named in accordance to the
+% project requirements file on avenue to learn.
+%
+
+%% 
+
+disp('Generating sum table...')
+% Generate sum table
+for i = 1:x
+    n_sum_L1 = int64(0);
+    n_sum_L2 = int64(0);
+    n_sum_LX = int64(0);
+    n_sum_LY = int64(0);
+    for j = 1:y
+        n_sum_L1 = n_sum_L1 + int64(image(i,j));
+        n_sum_L2 = n_sum_L2 + int64(image(i,j))^2;
+        n_sum_LX = n_sum_LX + i*int64(image(i,j));
+        n_sum_LY = n_sum_LY + j*int64(image(i,j));
+        if i ~= 1
+            L1(i,j) = L1(i-1,j) + n_sum_L1;
+            L2(i,j) = L2(i-1,j) + n_sum_L2;
+            LX(i,j) = LX(i-1,j) + n_sum_LX;
+            LY(i,j) = LY(i-1,j) + n_sum_LY;
+        else
+            L1(i,j) = n_sum_L1;
+            L2(i,j) = n_sum_L2;
+            LX(i,j) = n_sum_LX;
+            LY(i,j) = n_sum_LY;
+        end
+    end
+end
+disp('Done enerating sum table.')
+
+
+%% Part 3: Searching image for template
+% In order to calculate variance and gradient from our sum tables, we must
+% first derive a formula which has the variables in a proper form. Let us
+% first consider variance.
+% The variance of a random variable $$ X $$ with mean $$ E[X] = \mu $$ is defined
+% as:
+% 
+% $$ Var(X) = E[(X-\mu)^{2}] $$
+% 
+% We don't have any way of calculating variance in this form. However, using properties of expectations, we
+% can manipulate this formula as follows:
+%
+% $$ = E[(X-\mu)^{2}] $$
+% 
+% $$ = E[(X^2-XE[X] + E[X]^{2})] $$
+%
+% From linearity,
+% 
+% $$ = E[X^2] - 2E[XE[X]] + E[E[X]^{2}] $$
+% 
+% The expected value of an expectation is unchanged. In addition, we apply
+% the outer expectation to the $$ XE[X] $$ term:
+% 
+% $$ = E[X^2] - 2E[X]E[X] + E[X]^{2} $$
+% 
+% $$ = E[X^2] - E[X]^2 $$
+%
+% Variance in this form can be calculated using the SVTs L1 and L2.
+%
+% 
+% To calculate the gradients, suppose we had a JxJ template image. Then our
+% LX table can generate for us an EP operator for a position $$ (i,j) $$ which is
+% offset by however far in $$ i $$ we are in the image. So it is necessary
+% to perform patch_grad_x = (LX_sum - (i-(Jx-1)/2) * L1_sum) (note the
+% $$ i-(Jx-1)/2 $$) to achieve the correct offset so the center of the EPx begins
+% at in the center zero and extends to $$ \pm \frac{J+1}{2} $$ on either end.
+%
+% 
+
+
+%%
+patch_mean = double(zeros(x,y));
+search_mean = mean2(search);
+patch_var = double(zeros(x,y));
+search_var = var(single(search(:)), 1);
+count_project_1 = 0;
+count_project_2 = 0;
+
+% patch_grad_x = double(zeros(x,y));
+% patch_grad_y = double(zeros(x,y));
+patch_grad_mag = double(zeros(x,y));
+patch_grad_dir = double(zeros(x,y));
+
+search_grad_x = double(0);
+search_grad_y = double(0);
+
+% Template gradient using naive method
+for i=1:Jx
+    for j=1:Jy
+        search_grad_x = search_grad_x + (i - (Jx+1)/2)*double(search(i, j));
+        search_grad_y = search_grad_y + (j - (Jy+1)/2)*double(search(i, j));
+    end
+end
+
+search_grad_mag = sqrt(search_grad_x^2 + search_grad_y^2);
+search_grad_dir = atan2(search_grad_y, search_grad_x);
+
+% Search for the template inside larger image
+disp('Performing image search...')
+for i = m_s:x
+    for j = n_s:y
+        % If not searching edge of image
+        if i > m_s && j > n_s
+            L1_sum = double(L1(i, j) - L1(i - m_s, j) - L1(i, j - n_s) + L1(i - m_s, j - n_s));
+            L2_sum = double(L2(i, j) - L2(i - m_s, j) - L2(i, j - n_s) + L2(i - m_s, j - n_s));
+        
+            LX_sum = double(LX(i, j) - LX(i - m_s, j) - LX(i, j - n_s) + LX(i - m_s, j - n_s));
+            LY_sum = double(LY(i, j) - LY(i - m_s, j) - LY(i, j - n_s) + LY(i - m_s, j - n_s));
+        % Searching along edges
+        elseif i > m_s && j == n_s
+            L1_sum = double(L1(i, j) - L1(i - m_s, j));
+            L2_sum = double(L2(i, j) - L2(i - m_s, j));
+            
+            LX_sum = double(LX(i, j) - LX(i - m_s, j));
+            LY_sum = double(LY(i, j) - LY(i - m_s, j));
+        % Searching along edges
+        elseif j > n_s && i == m_s
+            L1_sum = double(L1(i, j) - L1(i, j - n_s));
+            L2_sum = double(L2(i, j) - L2(i, j - n_s));
+            
+            LX_sum = double(LX(i, j) - LX(i, j - n_s));
+            LY_sum = double(LY(i, j) - LY(i, j - n_s));
+        % Searching along edges
+        else
+            L1_sum = double(L1(i, j));
+            L2_sum = double(L2(i, j));
+            
+            LX_sum = double(LX(i, j));
+            LY_sum = double(LY(i, j));
+        end
+        patch_mean(i,j) = L1_sum/search_pixels;
+        patch_var(i,j) = L2_sum/search_pixels - patch_mean(i,j)^2;
+        
+        % Optional: Normalized patch gradients (not used)
+        % patch_grad_x = (LX_sum - (Jx+1)/2 * L1_sum) / (L1_sum + i*j*(Jx+1)/2);
+        % patch_grad_y = (LY_sum - (Jy+1)/2 * L1_sum) / (L1_sum + i*j*(Jy+1)/2);
+        
+        % Adjust the LX sum table's result by a factor using the L1 sum
+        % table to account for the fact that we want to convolve a matrix
+        % of the form 
+        % -(J+1)/2, -(J+1)/2 + 1, ... , 0, ... , (J+1)/2 - 1,(J+1)/2
+        % rather than how LX sum stores the values at row i,
+        % -(J+1)/2 + i, -(J+1)/2 + 1 + i, ... , i, ... , (J+1)/2 - 1 +
+        % i,(J+1)/2 + i
+        
+        patch_grad_x = (LX_sum - (i-(Jx-1)/2) * L1_sum);
+        patch_grad_y = (LY_sum - (j-(Jy-1)/2) * L1_sum);
+        patch_grad_mag(i,j) = sqrt(patch_grad_x^2 + patch_grad_y^2);
+        patch_grad_dir(i,j) = atan2(patch_grad_y, patch_grad_x);
+        
+        % If the mean, variance, gradient magnitude and gradient direction
+        % of the patch and template are similar, detect a match
+        if abs(search_mean - patch_mean(i,j)) < 0.001
+            count_project_1 = count_project_1 + 1;
+        end
+        if abs(search_mean - patch_mean(i,j)) < 0.001 && abs((search_var - patch_var(i,j))/search_var) < 0.005 ...
+                && abs((search_grad_dir - patch_grad_dir(i,j))/search_grad_dir) < 0.005 ...
+                && abs((search_grad_mag - patch_grad_mag(i,j))/search_grad_mag) < 0.005
+%             mean = abs(search_mean - patch_mean(i,j))
+%             search_var;
+%             patch_var(i,j);
+%             variance = abs(search_var - patch_var(i,j));
+            disp('Image found at (x,y):')
+            disp(j-n_s)
+            disp(i-m_s)
+            count_project_2 = count_project_2 + 1;
+        end
+    end
+end
+disp('Done performing image search.')
+
+%% Part 4: Extra results from code:
+
+% How many times the image was found
+disp('How many times the image was found using old algorithm:')
+count_project_1
+disp('How many times the image was found using new algorithm:')
+count_project_2
+% imshow(highlighted_image);
+
+%% Part 5: Complexity analysis
+% 
+% Generating the sum tables:
+% 
+% For an $$ m \times n $$ image, the algorithm must loop through each pixel
+% to compute the value of the sum table at $$ (i,j) $$. It keeps a running
+% sum (using previous values in the table) so regions do not need to be
+% resummed. Thus the algorithm for the sum table generation runs in $$ O(mn) $$.
+% Note that all four sum tables are generated in the same way, so there is
+% no need for special consideration.
+% 
+% For searching the reference for the template, suppose the template was $$
+% k \times k $$ pixels. Then we must consider every $$ k \times k $$ patch
+% in the reference image - however, with the SVT, we can get the desired
+% statistical value of the patch in constant time $$ O(1) $$ independent of k.
+% So if we want to do this for every $$ k \times k $$ patch in an $$ m \times n $$
+% image and assume $$ m, n >> k $$, then the algorithm runs in $$ O(mn) $$.
+%
+% Advantages of this algorithm: 
+% 
+% - Better runtime than naive approach if we want to search a large
+% image for a template, or check an image against multiple templates.
+%
+% - More statistical features means better identification of templates
+% (i.e., fewer false positives).
+% 
+% Disadvantages: 
+% 
+% - Slower and more complicated than a naive approach if we only 
+% have a small image or want to check a small region of a larger image for
+% a template. 
+% 
+% - Variance calculation using $$ E[X^2] - E[X]^2 $$ is numerically
+% unstable. Note that we are limited to calculating variance in this way
+% because we are using the sum table approach.
+% https://en.wikipedia.org/wiki/Variance#Definition <- (Source for
+% instability of variance calculation)
+%
+% - Extra memory used by sum tables
+%
+%% Part 6: Question
+% 
+% The size limitation of signed uint32 extends from $$ 0 $$ to $$ 2^{32}-1
+% $$. Thus our sum tables LX and LY must not exceed $$ 2^{32}-1 $$.
+%
+% We are given a reference image of $$ 1024 \times 1024 $$ pixels; suppose our 
+% template was $$ k \times k $$ pixels. Let us initially construct an upper
+% bound by contriving a worse-case scenario.
+% 
+% First, from the tutorial note 3SK3-proj2.pdf, there is a proof showing
+% that for the table L1, it is always possible to find the correct
+% statistical values relying on L1 even if there is integer overflow.
+% However, this proof relies on the property 
+% 
+% $$ (D + A - B - C) \bmod b = D + A - B - C $$
+% 
+% which will only hold if $$ D + A - B - C < b $$. For L1, this is a
+% reasonable assumption; for the worst-case scenario, a $$ k \times k $$
+% patch of pixels with value 255, we would have to have $$ 255k^2 > 2^{32}
+% $$ or $$ k > 4105 $$ to violate the condition. Most modern displays are
+% less than 3840 pixels wide on the long edge.
+% 
+% For LX/Y, we use the same formula assumption and try to determine a new upper
+% bound for k. Our worst-case scenario would be when we have a $$ k \times
+% k $$ patch of pixels with value 255 in the bottom right corner of LX/Y,
+% so that $$ LX(1024,1024) $$ is maximized. Our image matrix would look something
+% like
+% 
+% $$ I = \pmatrix{0 & 0 & \dots & 0 & \dots & 0 & 0\cr
+%                 0 & 0 & \dots & 0 & \dots & 0 & 0\cr
+%                 \vdots & \vdots & \ddots & \vdots & \ddots & \vdots & \vdots \cr
+%                 0 & 0 & \dots & (1024-k+1) \times 255 & \dots & (1024-k+1) \times 255 & (1024-k+1) \times 255\cr
+%                 \vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \vdots \cr
+%                 0 & 0 & \dots & 1023 \times 255 & \dots & 1023 \times 255 & 1023 \times 255\cr
+%                 0 & 0 & \dots & 1024 \times 255 & \dots & 1024 \times 255 & 1024 \times 255\cr}$$
+%
+% For which the sum of the patch is
+%
+% $$2^{32} > \sum_{i=1024-k+1}^{1024} 255 \times k \times i$$
+% 
+% $$2^{32} > 255 \times k \times \sum_{i=1024-k+1}^{1024} i$$
+% 
+% Using some sum identities this can be conveniently rewritten as
+%
+% $$ 2^{32} > 255k\bigg(\frac{1024 \times 1023}{2} -
+% \frac{(1024-k)(1024-k-1)}{2}\bigg) $$ 
+% 
+% which has the solution
+%
+% $$ k \leq 132. $$
+% 
+% Thus, our template has a limit of $$ 132 \times 132 $$ pixels.
+
+
+##### SOURCE END #####
+--></body></html>
