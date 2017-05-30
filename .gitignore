@@ -1,1 +1,4 @@
 /Old_content
+_site
+.sass-cache
+.jekyll-metadata
