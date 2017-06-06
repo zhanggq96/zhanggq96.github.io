@@ -1,0 +1,266 @@
+---
+---
+
+@import "minima";
+
+.kanji-box {
+  display: inline-flex;
+  flex-direction:column;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  // Must have both of the above for centering div inside div!!
+  width: auto;
+  text-align: center;
+  font-size: 0;
+  padding: 15px;
+  // margin: 15px;
+  // background-color:lightgrey;
+  background-color: rgb(252, 244, 217);
+  max-width: 700px;
+}
+
+.kanji-box span {
+  font-size: 16px;
+  min-width: 20px;
+}
+
+.kanji-row {
+  height: 21px;
+}
+
+.kanji {
+  display: inline;
+  padding: 2px;
+  // text-space-collapse:discard;
+}
+
+
+.kanji:hover {
+  // background-color: rgba(91, 192, 222, 0.55);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.kanji .kanji-tooltip {
+  visibility: hidden;
+  width: 128px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  // top: -20px;
+  z-index: 1;
+
+  font-size: 11px;
+
+}
+
+.kanji-graph-tooltip {
+  width: 128px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  // top: -20px;
+  z-index: 1;
+
+  font-size: 11px;
+}
+
+.kanji:hover .kanji-tooltip {
+  visibility: visible;
+}
+
+.kanji-freq-500 {
+  color: rgb(142, 210, 201);
+}
+
+.kanji-freq-1000 {
+  color: rgb(0, 170, 160);
+}
+
+.kanji-freq-1500 {
+  color: rgb(255, 184, 95);
+}
+
+.kanji-freq-2000 {
+  color: rgb(255, 122, 90);
+}
+
+.kanji-freq-2500 {
+  color: rgb(70, 32, 102);
+}
+
+.kanji-freq-n {
+  color: rgb(240, 240, 240);
+}
+
+.kanji-freq-plus {
+  color: black;
+}
+
+// Modification to above!
+.kanji-internet .kanji-freq-n {
+  color: black !important;
+}
+
+.kanji-internet .kanji-freq-plus {
+  color: rgb(240, 240, 240) !important;
+}
+// End modification
+
+.kanji-grade-1 {
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+.kanji-grade-2 {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.kanji-grade-3 {
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+.kanji-grade-4 {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.kanji-grade-5 {
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+.kanji-grade-6 {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.kanji-grade-7 {
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+//// Scatter plot css
+.kanji-circle-grade-1 {
+    fill: rgba(223, 193, 132, 0.7);
+}
+
+.kanji-circle-grade-2 {
+    fill: rgba(143, 96, 72, 0.7);
+}
+
+.kanji-circle-grade-3 {
+    fill: rgba(100, 68, 54, 0.7);
+}
+
+.kanji-circle-grade-4 {
+    fill: rgba(126, 181, 214, 0.7);
+    
+}
+
+.kanji-circle-grade-5 {
+    fill: rgba(42, 117, 169, 0.7);
+}
+
+.kanji-circle-grade-6 {
+    fill: rgba(39, 66, 87, 0.7);
+}
+
+.kanji-circle-grade-7 {
+    fill: rgba(77, 55, 99, 0.7);
+}
+
+//// End scatter plot css
+
+//// Bar graph css
+/*Bars*/
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.bar-grade-1 {
+    fill: rgba(223, 193, 132, 0.85);
+}
+
+.bar-grade-2 {
+    fill: rgba(143, 96, 72, 0.85);
+}
+
+.bar-grade-3 {
+    fill: rgba(100, 68, 54, 0.85);
+}
+
+.bar-grade-4 {
+    fill: rgba(126, 181, 214, 0.85);
+    
+}
+
+.bar-grade-5 {
+    fill: rgba(42, 117, 169, 0.85);
+    
+}
+
+.bar-grade-6 {
+    fill: rgba(39, 66, 87, 0.85);
+}
+
+.bar-grade-7 {
+    fill: rgba(77, 55, 99, 0.85);
+}
+
+.bar-grade-1:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+
+.bar-grade-2:hover {
+    fill: rgba(42, 117, 169, 1);
+}
+
+.bar-grade-3:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+
+.bar-grade-4:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+
+.bar-grade-5:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+
+.bar-grade-6:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+
+.bar-grade-7:hover {
+    fill: rgba(126, 181, 214, 1);
+}
+/*End bars*/
+
+
+.axis--x path {
+    display: none;
+}
+
+.axis-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.d3-tip {
+    font-family: Arial, sans-serif;
+}
+
+.d3-tip.n {
+    color: black;
+}
+////
