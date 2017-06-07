@@ -3,6 +3,62 @@
 
 @import "minima";
 
+//// Kanji-box Legend
+.color-label-seventh {
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  // padding-top: 12px;
+}
+
+.color-label-wrapper {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.color-label-box {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 3px;
+  margin-right: 5px;
+  margin-top: 3px;
+  // margin: 8px;
+  background-color: lightgray;
+}
+
+.color-label-freq-500 {
+  background-color: rgb(142, 210, 201);
+}
+
+.color-label-freq-1000 {
+  background-color: rgb(0, 170, 160);
+}
+
+.color-label-freq-1500 {
+  background-color: rgb(255, 184, 95);
+}
+
+.color-label-freq-2000 {
+  background-color: rgb(255, 122, 90);
+}
+
+.color-label-freq-2500 {
+  background-color: rgb(70, 32, 102);
+}
+
+.color-label-freq-n {
+  background-color: rgb(200, 200, 200);
+  background: linear-gradient(rgb(235, 235, 235), rgb(220, 220, 220));
+}
+
+.color-label-freq-plus {
+  background-color: black;
+}
+//// End Kanji-box Legend
+
 .kanji-box {
   display: inline-flex;
   flex-direction:column;
@@ -147,7 +203,7 @@
 
 //// Scatter plot css
 .kanji-circle-grade-1 {
-    fill: rgba(223, 193, 132, 0.7);
+    fill: rgba(100, 68, 54, 0.7);
 }
 
 .kanji-circle-grade-2 {
@@ -155,12 +211,13 @@
 }
 
 .kanji-circle-grade-3 {
-    fill: rgba(100, 68, 54, 0.7);
+    fill: rgba(223, 193, 132, 0.7);
+
 }
 
 .kanji-circle-grade-4 {
     fill: rgba(126, 181, 214, 0.7);
-    
+
 }
 
 .kanji-circle-grade-5 {
@@ -188,7 +245,7 @@
 }
 
 .bar-grade-1 {
-    fill: rgba(223, 193, 132, 0.85);
+    fill: rgba(100, 68, 54, 0.85);
 }
 
 .bar-grade-2 {
@@ -196,17 +253,15 @@
 }
 
 .bar-grade-3 {
-    fill: rgba(100, 68, 54, 0.85);
+    fill: rgba(223, 193, 132, 0.85);
 }
 
 .bar-grade-4 {
     fill: rgba(126, 181, 214, 0.85);
-    
 }
 
 .bar-grade-5 {
     fill: rgba(42, 117, 169, 0.85);
-    
 }
 
 .bar-grade-6 {
@@ -218,31 +273,52 @@
 }
 
 .bar-grade-1:hover {
-    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(100, 68, 54, 1);
+    fill: rgba(100, 68, 54, 0.25);
+//    fill: rgba(126, 181, 214, 1);
 }
 
 .bar-grade-2:hover {
-    fill: rgba(42, 117, 169, 1);
+//    fill: rgba(42, 117, 169, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(143, 96, 72, 1);
+    fill: rgba(143, 96, 72, 0.25);
 }
 
 .bar-grade-3:hover {
-    fill: rgba(126, 181, 214, 1);
+//    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(223, 193, 132, 1);
+    fill: rgba(223, 193, 132, 0.25);
 }
 
 .bar-grade-4:hover {
-    fill: rgba(126, 181, 214, 1);
+//    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(126, 181, 214, 1);
+    fill: rgba(126, 181, 214, 0.25);
 }
 
 .bar-grade-5:hover {
-    fill: rgba(126, 181, 214, 1);
+//    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(42, 117, 169, 1);
+    fill: rgba(42, 117, 169, 0.25);
 }
 
 .bar-grade-6:hover {
-    fill: rgba(126, 181, 214, 1);
+//    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(39, 66, 87, 1);
+    fill: rgba(39, 66, 87, 0.25);
 }
 
 .bar-grade-7:hover {
-    fill: rgba(126, 181, 214, 1);
+//    fill: rgba(126, 181, 214, 1);
+    stroke-width: 1.8 px;
+    stroke: rgba(77, 55, 99, 1);
+    fill: rgba(77, 55, 99, 0.25);
 }
 /*End bars*/
 

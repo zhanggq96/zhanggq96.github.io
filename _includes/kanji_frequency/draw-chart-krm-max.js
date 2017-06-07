@@ -143,19 +143,19 @@
 //     .text("G-ratio");
 
 var krm_grades = [
-  [1, "rgba(223, 193, 132, 0.7)", "Grade 1"], 
+  [1, "rgba(100, 68, 54, 0.7)", "Grade 1"], 
   [2, "rgba(143, 96, 72, 0.7)", "Grade 2"], 
-  [3, "rgba(100, 68, 54, 0.7)", "Grade 3"], 
+  [3, "rgba(223, 193, 132, 0.7)", "Grade 3"], 
   [4, "rgba(126, 181, 214, 0.7)", "Grade 4"], 
   [5, "rgba(42, 117, 169, 0.7)", "Grade 5"], 
   [6, "rgba(39, 66, 87, 0.7)", "Grade 6"], 
   [7, "rgba(77, 55, 99, 0.7)", "Grade 7"]
 ];
 
-var chart_krm = d3.select("#chart-krm")
+var chart_krm = d3.select("#chart-krm-max")
 .append('svg:svg')
-.attr('width', 695)
-  .attr('height', 420)
+.attr('width', 740)
+  .attr('height', 430)
   .attr('class', 'chart')
     margin_krm = {
         top: 20,
@@ -171,14 +171,14 @@ var chart_krm = d3.select("#chart-krm")
 var x_krm = d3.scaleBand().rangeRound([0, width_krm]).padding(0.1),
     y_krm = d3.scaleLinear().rangeRound([height_krm, 0]);
 
-var legend = chart_krm.append("g")
+var legend_krm = chart_krm.append("g")
     .attr("class", "legend")
     .attr("x", width_krm - 65)
-    .attr("y", 30)
+    .attr("y", 40)
     .attr("height", 100)
     .attr("width", 100);
 
-    legend.selectAll("rect")
+    legend_krm.selectAll("rect")
     .data(krm_grades)
     .enter()
       .append("rect")
@@ -190,7 +190,7 @@ var legend = chart_krm.append("g")
          return d[1];
       });
 
-    legend.selectAll("text")
+    legend_krm.selectAll("text")
     .data(krm_grades)
     .enter()
       .append("text")
@@ -210,7 +210,7 @@ var legend = chart_krm.append("g")
 //         return "<div><span>Kanji:</span> <span style='color:inherit;'>" + d[0] + "</span></div>" + "<div><span>n-rank:</span> <span style='color:inherit;'>" + d[2] + "</span></div>" + "<div><span>i-rank:</span> <span style='color:inherit;'>" + d[3] + "</span></div>" + "<div><span>g-ratio:</span> <span style='color:inherit;'>" + d[1] + "</span></div>";
 //     })
 
-var tip_krm = d3.select("#chart-krm")
+var tip_krm = d3.select("#chart-krm-max")
     .append('div')
     .attr('class', 'tip')
     .attr('class', 'tip')
@@ -259,7 +259,15 @@ g_krm.append("g")
     //      .attr("y", 6)
     //      .attr("dy", "0.71em")
     //      .attr("text-anchor", "end")
-    .text("Frequency");
+    // .text("Frequency");
+
+// Title
+g_krm.append("text")
+  .attr("x", (margin_krm.left - margin_krm.right - 45 + (width_krm) / 2))             
+  .attr("y", 0 + (margin_krm.top - 10))
+  .attr("text-anchor", "middle")  
+  .style("font-size", "16px")  
+  .text("Highest 27 g-ratio for Jōyō Kanji with n-rank ≤ 1,000");
 
 g_krm.selectAll(".bar")
     .data(kanji_data_krm_max)
@@ -286,7 +294,9 @@ g_krm.selectAll(".bar")
       .transition().duration(0)
       .style('top', y_krm(d[1]) - 20 + 'px')
       .style('left', x_krm(d[0]) + 'px')
-      .style('display', 'block');
+      .style('display', 'block')
+      .style("top", (event.pageY-10)+"px")
+      .style("left",(event.pageX+10)+"px");
       // .style('height', '20px');
     })
     .on("mousemove", function(){return tip_krm.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
@@ -307,7 +317,7 @@ g_krm.selectAll(".bar")
 
 chart_krm.append("text")
     .attr("transform",
-        "translate(" + ((margin_krm.left - margin_krm.right) + width_krm / 2) + " ," +
+        "translate(" + ((margin_krm.left + 10) + width_krm / 2) + " ," +
         (height_krm + margin_krm.top + 35) + ")")
     .attr("class", "axis-label")
     .style("text-anchor", "middle")

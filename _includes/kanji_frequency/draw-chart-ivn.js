@@ -1,7 +1,7 @@
 var ivn_grades = [
-  [1, "rgba(223, 193, 132, 0.7)", "Grade 1"], 
+  [1, "rgba(100, 68, 54, 0.7)", "Grade 1"], 
   [2, "rgba(143, 96, 72, 0.7)", "Grade 2"], 
-  [3, "rgba(100, 68, 54, 0.7)", "Grade 3"], 
+  [3, "rgba(223, 193, 132, 0.7)", "Grade 3"], 
   [4, "rgba(126, 181, 214, 0.7)", "Grade 4"], 
   [5, "rgba(42, 117, 169, 0.7)", "Grade 5"], 
   [6, "rgba(39, 66, 87, 0.7)", "Grade 6"], 
@@ -89,7 +89,7 @@ var margin = {top: 20, right: 15, bottom: 40, left: 65}
       .append('div')
       .attr('class', 'tip')
       .attr('class', 'kanji-graph-tooltip')
-      .html('I am a tooltip...')
+      .html('')
       // .html(function(d) {
       //   return x(d[0]);
       // })
@@ -122,6 +122,14 @@ var margin = {top: 20, right: 15, bottom: 40, left: 65}
     .attr("class", "axis-label")
     .style("text-anchor", "middle")
     .text("i-rank");
+
+  // Title
+  chart.append("text")
+      .attr("x", (margin.left - margin.right + (width) / 2))             
+      .attr("y", 0 + (margin.top + 5))
+      .attr("text-anchor", "middle")  
+      .style("font-size", "16px")  
+      .text("i-rank vs n-rank for all Jōyō Kanji with n-rank ≤ 2,501");
     
   g.selectAll("scatter-dots-gr-1")
     .data(kanji_data_gr_1)
