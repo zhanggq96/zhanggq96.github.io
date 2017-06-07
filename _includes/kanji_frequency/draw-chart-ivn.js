@@ -129,7 +129,7 @@ var margin = {top: 20, right: 15, bottom: 40, left: 65}
       .attr("y", 0 + (margin.top + 5))
       .attr("text-anchor", "middle")  
       .style("font-size", "16px")  
-      .text("i-rank vs n-rank for all Jōyō Kanji with n-rank ≤ 2,501");
+      .text("i-rank vs n-rank for all Jōyō Kanji with nonzero n-rank ≤ 2,501");
     
   g.selectAll("scatter-dots-gr-1")
     .data(kanji_data_gr_1)
