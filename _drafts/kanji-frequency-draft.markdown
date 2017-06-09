@@ -534,7 +534,7 @@ At the very least, there is still a healthy mix of characters from all six popul
 
 The natural thing to wonder next is, then, how do these trends extend to Kanji usage over the internet?
 
-Unfamiliar to most foreigners, Japan has it's own branding of social networking/sharing sites. Japan's most popular online community is 2ch (2ちゃんねる) and their most popular video sharing site is niconico (ニコニコ), which are roughly equivalent to 4chan and Youtube here in the western world. I wanted to collect a large set of Japanese internet conversation data but wasn't very familiar with either site, so I looked elsewhere for a relatively active, recent and diverse Japanese community with easily-scrapable public comments. And where else did I find this, [but on reddit?][jp-subreddits]
+Unfamiliar to most foreigners, Japan has it's own branding of social networking/sharing sites. Japan's most popular online community is 2ch (2ちゃんねる) and their most popular video sharing site is niconico (ニコニコ), which are roughly equivalent to 4chan and Youtube here in the western world. I wanted to collect a large set of Japanese internet conversation data but wasn't very familiar with either site, so I looked elsewhere for a relatively active, recent and diverse Japanese community with easily-scrapable public comments. And where else could I have found such a thing, [but on reddit?][jp-subreddits]
 
 So I extracted this list of subreddits and hooked it up to reddit's nice API, then left it on for a night to collect comments on posts in these subreddits. I scraped comments based on the following criteria:
 
@@ -1045,7 +1045,7 @@ But first, let's take a look at how the Kanji n-ranks compare with the i-ranks d
 <!--Move second half opf this paragraph to addendum-->
 I will denote a Kanji as n-like if it's n-rank < i-rank and i-like if it's i-rank < n-rank. If we imagine a line with unit slope dividing the quadrant in the graph into two, i-like kanji are below this line and n-like kanji are to the left. There are 2,038 data points in total, 98 less than the number of total number of Jōyō Kanji: the reason for this is that some Jōyō Kanji exceed the n-rank threshold of 2,501 [^1]. 
 
-One must be careful to note that the axes sizes are not equal, but even after taking this into account, by inspection, there seem to be far more low-end i-rank extrema (Kanji with high n-rank sitting close to the n-rank axis) among the data. This is despite the fact that we have far more i-rank data beyond 2,500. The apparent discrepancy can be explained if we recall that our set only contains Jōyō Kanji. In actuality, there are 1,205 n-like Kanji and 829 i-like Kanji; Kanji that are n-like are less extreme in their n-likeness in general. The imbalance in the number of n-like and i-like Kanji presents just another confirmation that the Jōyō Kanji list was better designed for reading the newspaper rather than less formal internet discussions.
+One must be careful to note that the axes sizes are not equal, but even after taking this into account, by inspection, there seem to be many low-end i-rank extrema (Kanji with high n-rank sitting close to the n-rank axis). In actuality, there are 1,205 n-like Kanji and 829 i-like Kanji; in general, Kanji that are n-like are less extreme in their n-likeness. The imbalance in the number of n-like and i-like Kanji presents just another confirmation that the Jōyō Kanji list was better designed for reading the newspaper rather than less formal internet discussions.
 
 To analyze the demographic of Kanji lying on either extreme, I will need a measure of extremum. There are multiple ways I could have defined one (such as a simple difference or ratio between i-ranks and n-ranks), but in the end I decided to use what I will call a g-ratio, which I defined as (i-ratio + 10) / (n-ratio + 10). Adding this small buffer to either side of the fraction was intended to help the higher ranked Kanji have a presence while maintaining a solid bias to low-ranked Kanji which are still commonly used that have significantly advanced their i-rank beyond their n-rank.
 
@@ -1065,14 +1065,15 @@ Here are a subset of the Jōyō Kanji with the lowest g-ratio:
 
 Many of the lowest g-ratio positions are filled by the numeral Kanji, (十,五,九,六,四,七,三,八,二); the use of arabic numerals has taken over representation of numbers over the internet. Notably, however, the Kanji for one (一) is not in this list because it is still commonly used in meaningful compounds. Moreover, the Kanji for two (二) has the highest g-ratio of the numerals in this list, which I believe is due to the same aforementioned reason (common compounds include 二人 and 二度と).
 
-There are also many Kanji associated with politics and/or geography; 
+There are also many Kanji associated with politics and/or geography, for example: 
 * 国: Country
 * 区: District
 * 市: City
 * 政: Government
 * 党: Political party
 
-This indicates that politics aren't as hot a topic on Japanese subreddits as they are in the news (and probably compared to English speaking subreddits as well!).
+<!--This indicates that politics aren't as hot a topic on Japanese subreddits as they are in the news (and probably compared to English speaking subreddits as well!).-->
+
 
 <div id="chart-krm-max">
 <!--        <svg width="740" height="420"></svg>-->
@@ -1083,17 +1084,19 @@ This indicates that politics aren't as hot a topic on Japanese subreddits as the
     {% endfor %}
 </div>
 
-Lorem Ipsum
+Dominating the high end of the spectrum are the two Kanji 曲 (song) and 音 (sound). This is an indication that music makes up a huge subculture within Japanese subreddits; there are a few subs dedicated to certain musical groups (for example, /r/lovelive_ja). This presumption is strengthened further by noting that characters not far from the top 27 include 歌 (song, to sing) and 楽 (component in the compound meaning music).
 
+Further down from the two titans include 動 and 画 (together 動画; animation), which could attest for the less pervasive but still present anime community.
 
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+But it is important to keep in mind that these charcters, paired together with different compound characters, have a multitude of different meanings which may have little relevance to the definitions I've provided. So the reasons for each ranking I've conjectured could be completely misplaced, and actually be because of something else entirely which I've overlooked. That's just another feature of Japanese - and pretty much every other language - that characters on their own can only tell you so much without context.
 
 [^1]: Indeed, combined with the fact that two of the three Kanji with zero i-rank have nonzero n-rank, if one were to count they would expect to see those as 98 - 2 = 96 black (zero n-rank) characters from table 1 of this post, which is correct.
 
+<!--
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+-->
 [kanji-2501]:   http://kanjicards.org/kanji-list-by-freq.html
 [kanji-joyo]:   http://www.saiga-jp.com/language/kanji_list.html
 [kanji-逓]: http://jisho.org/search/%E9%80%93
