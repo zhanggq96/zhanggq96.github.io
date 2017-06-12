@@ -46,9 +46,11 @@ Will not render properly on screen with width < 800 px.
 
 In Japan, the Ministry of Education requires all students to learn 2,136 standardized Kanji throughout grades 1 to 6. The list was originally formulated as the Tōyō kanji back in the period just after WWII, but has been gradually revised over time into the modern Jōyō Kanji with the latest revision being in 2010. 
 
-The list reflects a set of characters that are considered to be important for "regular use" - this can have a number of broad interpretations, but the one I will focus on in this article is Kanji frequency of usage. Since others have already compiled [lists of Kanji][kanji-2501] sorted by usage frequency in newspapers, I will start by comparing frequency of usage in newspapers to the Jōyō Kanji taught in schools.
+The list reflects a set of characters that are considered to be important for "regular use" - this can have a number of broad interpretations, but the one I will focus on in this article is Kanji frequency of usage. Since others have already compiled [lists of Kanji][kanji-2501] sorted by usage frequency in newspapers, I was interested in comparing frequency of usage in newspapers to the Jōyō Kanji taught in schools.
 
-The chart below consists of all 2,136 Jōyō Kanji sorted primarily by grade; the alternating highlighted sections indicate the separation between grade 1, grade 2, etc up until grade 7. The secondary sorting seems to be done inconsistently however. The Grade 1 Kanji are sorted by Japanese reading (on’yomi then kun’yomi), whereas the grade 7 Kanji seem to be sorted by radical and/or number of strokes.
+So I compiled some data from various sources I'll detail below then created some visuals.
+
+The first chart below consists of all 2,136 Jōyō Kanji sorted primarily by grade; the alternating highlighted sections indicate the separation between grade 1, grade 2, etc up until grade 7. The secondary sorting seems to be done inconsistently. The Grade 1 Kanji are sorted by Japanese reading (on’yomi then kun’yomi), whereas the grade 7 Kanji seem to be sorted by radical and/or number of strokes.
 
 The Kanji have also been color-coded by rank of their frequency of usage in newspapers (which I will denote as n-rank hereon in). Each color represents a category of 500 Kanji (1-500, 501-1000, etc) up until 2501 Kanji. In particular, **Jōyō Kanji not present in the kanji-2501 set are assigned a color of black and n-rank of zero.** You can move your cursor over each Kanji to view its exact n-rank.
 
@@ -523,13 +525,17 @@ The Kanji have also been color-coded by rank of their frequency of usage in news
 </div>
 </div>
 
-Kanji taught in elementary school doesn’t wander too far into obscure territory. The two exceptions are [汽][kanji-汽] (meaning steam, used in the compound for train/steam train) and [蚕][kanji-蚕] (meaning silkworm, used in the compound for silk). Even though they are not used frequently, the objects they represent may have once been predominant in the culture and lifestyle of the Japanese. Additionally, the character 汽 is very common in Chinese. These may have been influences in selecting them for the Jōyō Kanji, but this is just speculation on my part.
+Notice all the green at the top? It means that Kanji with lower n-rank are being taught in earlier grades, which is almost certainly a reassuring sign!
 
-Grade 7 is where the curriculum difficulty increases drastically. In fact, there are almost as many grade seven Kanji as there are 1-6 Kanji! We can see that the characters taught in these grades are composed of a mixture of all the n-rank classes, unlike the common-dominated characters taught in the lower grades. 96 of the Kanji taught have zero n-rank alongside 27 which have sub-500 n-rank and 161 with 500 < n-rank ≤ 1000.
+Most of these Kanji don’t wander too far into obscure territory. The two exceptions are [汽][kanji-汽] (meaning steam, used in the compound for train/steam train) and [蚕][kanji-蚕] (meaning silkworm, used in the compound for silk). Even though they are not used frequently, the objects they represent may have once been predominant in the culture and lifestyle of the Japanese. Additionally, the character 汽 is very common in Chinese. These may have been influences in selecting them for the Jōyō Kanji, but this is just speculation on my part.
+
+Grade 7 is where the curriculum difficulty increases drastically. In fact, there are almost as many grade seven Kanji as there are 1-6 Kanji! We can see that the characters taught in these grades are composed of a mixture of all the n-rank classes, unlike the green-dominated characters taught in the lower grades. 96 of the Kanji taught have zero n-rank alongside 27 which have sub-500 n-rank and 161 with 500 < n-rank ≤ 1000.
 
 The two lowest sub-500 Kanji taught in grade seven are ranked ~270. They include [歳][kanji-歳] (counter for age) and [企][kanji-企] (scheme, plan). Both seem to be very common terms to me, and I was surprised to learn they are not taught sooner. But overall, it is quite reasonable to expect that some of these common characters get pushed back to the later grades; it’s just a fact of scheduling conflicts and statistics.
 
-The n-distribution of Kanji is very skewed towards common Kanji in the lower grades and abruptly becomes quite mixed in the middle grades. This system, in theory, looks like it would work rather well in preparing students to consume physical media: teach most of the common characters in elementary school. The natural thing to wonder next is, then, how do these trends extend to a more modern case such as Kanji usage over the internet?
+It appears that the n-distribution of Jōyō Kanji is very skewed towards common Kanji in the lower grades and abruptly becomes quite mixed in the middle grades. This system seems like it would work well in preparing students to consume physical media. But with the history surrounding its creation, one may wonder if the modern Jōyō Kanji are simply a revisioning of an artifact of the past. 
+
+The natural thing way to test this is, then, how do these trends extend to a more modern case such as Kanji usage over the internet?
 
 I wanted to collect a large set of Japanese internet conversation data but wasn’t very familiar with many Japanese content boards. There were of course the Japanese equivalent and namesake/inspiration of 4-chan, 2ch (2ちゃんねる), and the popular video sharing site niconico (ニコニコ), but setting up a scraper for these was needlessly difficult. So I looked elsewhere for a relatively active, recent and diverse Japanese community with easily-scrapable public comments. And where else could I have found such a thing, [but on reddit?][jp-subreddits]
 
@@ -1020,7 +1026,7 @@ The i-rank chart below is the schemed the same way as the n-rank chart above **w
 </div>
 </div>
 
-The i-rank distribution looks relatively identical to the previously established n-rank distribution, but with more variance. By this metric, there are more uncommon 2000+ Kanji in grades one to six (13 vs 2) and more common 500- Kanji in grade seven (41 vs 27).
+The i-rank distribution looks relatively identical to the previously established n-rank distribution, but with more variance. By this metric, there are more uncommon 2000+ Kanji in grades one to six (13 vs 2) and more common 500- Kanji in grade seven (41 vs 27). I personally think that the lists are close enough in similarity such that the Jōyō Kanji have been revisioned fairly well - but this discrepency still raises some hints about the nature of the early-taught Kanji in the Jōyō Kanji list, which will be discussed in a later section.
 
 Because there is i-rank data for characters far beyond the rank of 2501, there are only three Kanji with i-rank = 0 (meaning they were never used in *any* post). Those with sharp vision will find that they are [逓][kanji-逓] (which means something along the lines of relay or communications), [詔][kanji-詔] (imperial edict), and [楷][kanji-楷] (square character style of writing). All three had relatively high (or zero) n-ranks as well.
 
@@ -1060,7 +1066,7 @@ With this definition, a very high g-ratio indicates high i-like extremity and a 
     {% endfor %}
 </div>
 
-Many of the lowest g-ratio positions are filled by the numeral Kanji, (十,五,九,六,四,七,三,八,二); undoubtedly this is because the use of arabic numerals has taken over representation of numbers over the internet. Notably, however, the Kanji for one (一) is not in this list because it is still commonly used in meaningful compounds. Moreover, the Kanji for two (二) has the highest g-ratio of the numerals in this list, which I believe is due to the same aforementioned reason (common compounds include [二人][kanji-二人] and [二度と][kanji-二度と]).
+Many of the lowest g-ratio positions are filled by the numeral Kanji, (十,五,九,六,四,七,三,八,二). Undoubtedly this is because the use of arabic numerals has taken over representation of numbers over the internet. However, the Kanji for one (一) is notably not in this list because it is still commonly used in meaningful compounds. Moreover, the Kanji for two (二) has the highest g-ratio of the numerals in this list, which I believe is due to the same aforementioned reason (common compounds include [二人][kanji-二人] and [二度と][kanji-二度と]).
 
 There are also many Kanji associated with politics and/or geography, for example: 
 * [国][kanji-国]: Country
@@ -1070,7 +1076,7 @@ There are also many Kanji associated with politics and/or geography, for example
 * [党][kanji-党]: Political party
 
 <!--This indicates that politics aren't as hot a topic on Japanese subreddits as they are in the news (and probably compared to English speaking subreddits as well!).-->
-
+We see that many of these Jōyō Kanji (often taught in earlier grades) have an essential role in the context of society, but are not as widely used - an obvious analogy would be the teaching of geography and government in English-speaking elementary schools.
 
 <div id="chart-krm-max">
 <!--        <svg width="740" height="420"></svg>-->
@@ -1089,7 +1095,7 @@ Further down from the two titans include [動][kanji-動] and [画][kanji-画] (
 
 <!--I must now distinguish something that becomes apparent based on these two charts: in general, it appears that n-like Kanji are more n-like than i-like Kanji are i-like, which contradicts with an earlier statement I made. However, this is not actually the case, as for this graph I have selected among only the Kanji with n-rank ≤ 1,000; for this subset, the opposite behaviour is exhibited, barring the two i-like titans 曲 and 音.-->
 
-The g-ratio charts I have generated do seem to suggest that politics, geography and work are more important narratives in newspapers whereas entertainment is a more relevant discussion on the internet. The same cannot be said with such certainty for the english-speaking side of reddit; it wouldn't surprise me if all the alternative facts progenerating from the unpresidented covfefe our frontpage has been thrown into have forever altered the make of our English language.
+The g-ratio charts I have generated do seem to suggest that politics, geography and work are more important narratives in newspapers whereas entertainment is a more relevant discussion on the internet. The same cannot be said with such certainty for the english-speaking side of reddit; I do not have any data to back up my claim, but it wouldn't surprise me if all the alternative facts progenerating from the unpresidented covfefe our frontpage has been thrown into have forever altered the make of our English language.
 
 But that's another discussion, for another day.
 
