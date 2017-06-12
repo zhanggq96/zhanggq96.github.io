@@ -539,7 +539,7 @@ The natural thing way to test this is, then, how do these trends extend to a mor
 
 I wanted to collect a large set of Japanese internet conversation data but wasn’t very familiar with many Japanese content boards. There were of course the Japanese equivalent and namesake/inspiration of 4-chan, 2ch (2ちゃんねる), and the popular video sharing site niconico (ニコニコ), but setting up a scraper for these was needlessly difficult. So I looked elsewhere for a relatively active, recent and diverse Japanese community with easily-scrapable public comments. And where else could I have found such a thing, [but on reddit?][jp-subreddits]
 
-So I extracted this list of subreddits and hooked it up to reddit's nice API, then left it on for a night to collect comments on posts in these subreddits. I scraped comments based on the following criteria:
+So I extracted this list of subreddits and left it on for a night to collect comments on posts in these subreddits with the help of reddit's nice API. I scraped comments based on the following criteria:
 
 * The comment must be made after January 1, 2016
 * Comments should be extracted from no more than 5000 posts in any one subreddit (a post may contain multiple comments)
