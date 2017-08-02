@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kanji Frequency Draft"
+title:  "Kanji Frequency"
 date:   2017-06-01 22:48:03 -0400
 author: George Zhang
 categories: jekyll update
