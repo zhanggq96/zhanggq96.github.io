@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Quickdraw Gifs Draft"
-date:   2017-07-25 15:00:00 -0400
+title:  "Quickdraw Gifs"
+date:   2017-08-06 20:00:00 -0400
 author: George Zhang
 categories: sketch tensorflow 
 custom_css: quickdraw

@@ -3,7 +3,7 @@ layout: post
 title:  "Kanji Frequency"
 date:   2017-06-01 22:48:03 -0400
 author: George Zhang
-categories: jekyll update
+categories: japanese reddit 
 ivn_js:
 - kanji_frequency/newspaper_vs_internet_freq_gr_1.js
 - kanji_frequency/newspaper_vs_internet_freq_gr_2.js
@@ -531,7 +531,7 @@ Most of these Kanji don’t wander too far into obscure territory. The two excep
 
 Grade 7 is where the curriculum difficulty increases drastically. In fact, there are almost as many grade seven Kanji as there are 1-6 Kanji! We can see that the characters taught in these grades are composed of a mixture of all the n-rank classes, unlike the green-dominated characters taught in the lower grades. 96 of the Kanji taught have zero n-rank alongside 27 which have sub-500 n-rank and 161 with 500 < n-rank ≤ 1000.
 
-The two lowest sub-500 Kanji taught in grade seven are ranked ~270. They include [歳][kanji-歳] (counter for age) and [企][kanji-企] (scheme, plan). Both seem to be very common terms to me, and I was surprised to learn they are not taught sooner. But overall, it is quite reasonable to expect that some of these common characters get pushed back to the later grades; it’s just a fact of scheduling conflicts and statistics.
+The two lowest sub-500 Kanji taught in grade seven are ranked ~270. They include [歳][kanji-歳] (counter for age) and [企][kanji-企] (scheme, plan). Both seem to be very common terms to me, and I was surprised to learn they are not taught sooner. But overall, it is quite reasonable to expect that some of these common characters get pushed back to the later grades; it’s just a fact of statistics and scheduling conflicts.
 
 It appears that the n-distribution of Jōyō Kanji is very skewed towards common Kanji in the lower grades and abruptly becomes quite mixed in the middle grades. This system seems like it would work well in preparing students to consume physical media. But with the history surrounding its creation, one may wonder if the modern Jōyō Kanji are simply a revisioning of an artifact of the past. 
 
@@ -1032,7 +1032,7 @@ Because there is i-rank data for characters far beyond the rank of 2501, there a
 
 Of particular interest is the common character [撃][kanji-撃], which has advanced ([no pun intended][kanji-進撃]) from an n-rank of 474 to an i-rank of 246. An interesting hypothesis is that this is due to the influence of popular anime TV series [Attack on Titan (進撃の巨人)][kanji-進撃の巨人], especially now that the second season is currently airing (at the time this post was written) ! 
 
-However, when we take a look at the other Kanji within the name, we find that the opposite holds true for characters 進 and 巨: 進 fell from 143 to 287 and 巨 from 893 to 898, so this hypothesis has no ground. Overall, anime/manga themed subreddits made up only a small portion of the 304 subreddits in the list, so their influence was probably overstated in my mind. (We will see later which kinds of communities really dominate.)
+However, when we take a look at the other Kanji within the name, we find that the opposite holds true for characters 進 and 巨: 進 fell from 143 to 287 and 巨 from 893 to 898, so this hypothesis has no ground. Overall, anime/manga themed subreddits made up only a small portion of the 304 subreddits in the list, so their influence was probably overstated in my mind. (We will see later which communities really dominate).
 
 But first, let’s take a look at how the Kanji n-ranks compare with the i-ranks directly.
 
@@ -1046,7 +1046,7 @@ But first, let’s take a look at how the Kanji n-ranks compare with the i-ranks
 </div>
 
 <!--Move second half opf this paragraph to addendum EDIT:DONE-->
-One must be careful to note that the axes sizes are not equal; this is because we have further data on i-rank Kanji compared to the n-rank Kanji, which are limited to 2501. The uneven axes sizes are a further consequence of this. Also, though it may appear like there are more i-like Kanji, in actuality there are 1,205 n-like Kanji and 829 i-like Kanji[^2].
+One must be careful to note that the axes sizes are not equal; this is because we have further data on i-rank Kanji compared to the n-rank Kanji, which are limited to 2501 in number. The uneven axes sizes are a further consequence of this. Also, though it may appear like there are more i-like Kanji, in actuality there are 1,205 n-like Kanji and 829 i-like Kanji[^2].
 
 I will denote a Kanji as n-like if it's n-rank < i-rank and i-like if it's i-rank < n-rank. If we imagine a line with unit slope dividing the quadrant in the graph into two, i-like kanji are below this line and n-like kanji are to the left. There are 2,038 data points in total, 98 less than the number of total number of Jōyō Kanji: the reason for this is that some Jōyō Kanji exceed the n-rank threshold of 2,501[^1]. 
 
