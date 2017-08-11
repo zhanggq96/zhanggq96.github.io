@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quickdraw Gifs"
-date:   2017-08-06 20:00:00 -0400
+date:   2017-07-25 15:00:00 -0400
 author: George Zhang
 categories: sketch tensorflow 
 custom_css: quickdraw
@@ -175,7 +175,7 @@ canvases = sess.run(cs,feed_dict) # generate some examples
 canvases = np.array(canvases) # T x batch x img_size
 {% endhighlight %}
 
-You'll notice that in generating the new samples, we used the feed_dict variable from the last iteration of training! So is it possible that we are somehow abusing the training images to draw our new images? (Well, in some sense, of course we are ... this is machine learning, after all. To make the question more precise, is the neural net independently drawing new images based solely off of statistical data from training images, or is it "copying" off of the training images like a university student rewording an essay they found on the internet?)
+You'll notice that in generating the new samples, we used the feed_dict variable from the last iteration of training! So is it possible that we are somehow abusing the training images to draw our new images? (Well, in some sense, of course we are ... this is machine learning, after all. To make the question more precise, is the neural net independently drawing new images based solely off of statistical data from training images, or is it "copying" off of the training images, like a university student rewording an essay they found on the internet?)
 
 Figure 6 of the *draw* paper I linked to earlier depicts a "most similar" comparison of generated images to training set images; indeed, what I speculated upon in the previous paragraph should not be the case. I'm not entirely sure to what extent the feed_dict influences the generated images, but just from using the NN and trying different things it seems like it is only being used as a random seed because it has the correct canvas size. To back that up, I rewrote the code to use a custom image as the seed for generating all 100 new images:
 
@@ -304,7 +304,7 @@ def not_really_edges_get_edges(img):
 
 {% endhighlight %}
 
-I set the probability threshold fairly low, so that most pixels are left untouched. Now adding in this code produces the results on the right of the image pair, which is noticeably less conformal than the results using identical seeds. Here is a demonstration of the same results:
+I set the probability threshold fairly low, so that most pixels are left untouched. Now adding in this code produces the the new set of outputs on the right, which is noticeably less conformal than the results using identical seeds. Here is a demonstration of the same results:
 
 <span align="center" class="quickdraw-samples">
     <img src="http://i.imgur.com/V9BwECF.png" style="max-width: 350px; max-height: 350px">
@@ -360,6 +360,8 @@ imageio.mimsave('%s/%s.gif' % (gifpath, prefix), images[:num_gif_frames], durati
 print('Saving gif file in:', '%s/%s.gif' % (gifpath, prefix))
 
 {% endhighlight %}
+
+Before rendering the finished product, I apply a sharpening and edge enhancing filter (to make edges less blurry), then anti-alias the result (to make sure the edges aren't *too* pixelated). And that's the end!
 
 <span align="center" class="quickdraw-samples">
     <img src="http://i.imgur.com/2bgm0K2.gif">
