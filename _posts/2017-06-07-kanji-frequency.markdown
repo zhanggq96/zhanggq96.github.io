@@ -1095,7 +1095,7 @@ Further down from the two musical titans include [動][kanji-動] and [画][kanj
 
 <!--I must now distinguish something that becomes apparent based on these two charts: in general, it appears that n-like Kanji are more n-like than i-like Kanji are i-like, which contradicts with an earlier statement I made. However, this is not actually the case, as for this graph I have selected among only the Kanji with n-rank ≤ 1,000; for this subset, the opposite behaviour is exhibited, barring the two i-like titans 曲 and 音.-->
 
-The g-ratio charts I have generated do seem to suggest that politics, geography and work are more prominent narratives in newspapers whereas entertainment is a more relevant discussion on the internet. The same cannot be said with such certainty for the english-speaking side of reddit; I do not have any data to back up my claim, but it wouldn't surprise me if all the alternative facts progenerating from the unpresidented covfefe the reddit frontpage has been thrown into have forever altered the make of the English language.
+The g-ratio charts I have generated do seem to suggest that the more prominent narratives in newspapers are politics, geography and work whereas they shift towards entertainment on the internet. Curiosly, I *would* say that this should certainly hold for the english-speaking side of reddit as well but lately the state of the frontpage has made me hesitant about doing so; I do not have any data to back up my claim, but the rise of a certain political figure has certainly stirred the web into something very different from before...
 
 But that's another discussion, for another day.
 
