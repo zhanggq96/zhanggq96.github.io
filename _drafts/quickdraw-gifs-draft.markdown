@@ -18,6 +18,8 @@ custom_css: quickdraw
 <!--http://mattgemmell.com/page-specific-assets-with-jekyll/-->
 <!--https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll-->
 
+*Disclaimer: I'm new to machine learning, so there could be inaccuracies in here! I hope to learn more in the future."
+
 <span align="center" class="quickdraw-samples">
     <img src="http://i.imgur.com/esT7CSe.gif">
     <img src="http://i.imgur.com/qmBzM3w.gif">
