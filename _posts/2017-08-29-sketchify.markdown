@@ -7,7 +7,7 @@ categories: sketch tensorflow
 custom_css: none
 ---
 
-In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], which via a *decoder* draws a generated scene one part at a time, spacially building upon its previous renderings (similar to what writers would describe as a "gardner".) It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
+In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], which via a *decoder* draws a generated scene one part at a time, spacially building upon its previous renderings (similar to what writers would describe as a "gardner"). It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
 
 <!--
 <span align="center" class="quickdraw-samples">
@@ -48,7 +48,8 @@ import cv2
 # From Deepcolor repository
 # Converts image to binary greyscale using adaptive thresholding.
 def filter_contour(img_rgb):
-    img_contour = cv2.adaptiveThreshold(cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, blockSize=9, C=2)
+    img_contour = cv2.adaptiveThreshold(cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY), 255,
+                  cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, blockSize=9, C=2)
     img_denoise = cv2.medianBlur(img_contour, 3)
 
     return img_denoise
@@ -67,6 +68,10 @@ One thing I found while going through the technique was that performing the inve
 It's far from perfect, but it's workable. Code from source provided below.
 
 {% highlight python %}
+import cv2
+...
+# From http://www.askaswiss.com/2016/01/how-to-create-pencil-sketch-opencv-python.html
+# Converts image to a sketch-like appearance.
 def image_to_sketch(img):
     def dodge(image, mask):
         return cv2.divide(image, mask, scale=256)
