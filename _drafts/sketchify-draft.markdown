@@ -32,6 +32,12 @@ U-Net was originally used for [biomedical image segmentation][u-net]. I was insp
 
 ### Generating Training / "Ground Truth" Data
 
+Since there's no prebuilt dataset for this sort of thing, first I'll discuss data collection and the image processing techniques I used to generate my data.
+
+For the creation of my dataset, I collected roughly 5800 anime images from my favorite source (reddit), more specifically the SFW anime art sub [/r/awwnime][awwnime]. They were almost all used as training data, whereas my validation and testing sets came from various other sources like other anime-themed subs or pixiv.net. All of the collected images were within the date range [2016/01/01, 2017/08/20-ish] so the art style is relatively up to date. 
+
+The images were all cropped/resized to (256x256); for landscape images, I selected the middle square portion whereas for portrait images I selected the topmost square portion, as I believe they would contain the most useful information. Now we will have to process these images to form approximations of our desired training/truth data
+
 The author of *deepcolor* applied onto full-colored images an adaptive thresholding technique to generate his "manga-style" training images. The idea of "thresholding" is based in that usually published manga is binary - a pixel is either fully black, or fully white - so we need to find a method which takes in a rgb pixel as input and purposefully maps it to either "black" or "white". However, **global** thresholding - thresholding the whole image at once - would not be a good conversion technique for this purpose. In the image below, the middle two images were generated using two different global conversion thresholds. Due to the uneven luminance, we have to sacrifice readability in one region for another.
 
 ![Left: Original. Middle: Two different global thresholding results. Right: Adaptive thresholding.](http://i.imgur.com/fkrE9J4.png){: .center-image }
@@ -118,15 +124,17 @@ This represents the generative portion of the network. As usual, the results fro
 
 The process of concatenating the features between corresponding up/down steps - forming residual connections - seems to be the factor that gives this net it's amazing high-level feature preservation ability. Along each step of the restoration upsampling the network must consider the results from a previous downsampling step, and the further down along the upsampling process it gets the farther back along the downsampling process it has to look - almost like a reversed actualization of [Cloud Atlas][cloud-atlas].
 
+<!--
 For the actual training of the network, I collected roughly 5800 anime images from my favorite source (reddit), more specifically the SFW anime art sub [/r/awwnime][awwnime]. They were almost all used as training data, whereas my validation and testing sets came from various other sources like other anime-themed subs or pixiv.net. All of the collected images were within the date range [2016/01/01, 2017/08/20-ish] so the art style is relatively up to date. 
 
 The images were all cropped/resized to (256x256); for landscape images, I selected the middle square portion whereas for portrait images I selected the topmost square portion, as I believe they would contain the most useful information.
+-->
 
-I then trained on this dataset with a minibatch size of 16 for about 80 epoches on a TITAN X. (I had originally planned for 216 epoches, but the program crashed 5 hours in and I called it a day). The memory usage was quite heavy; with the rather small minibatch of 16 (256x256) images, I was using nearly 8 GB of RAM already! Though I could have still used a slightly larger minibatch, I have a feeling that the computer would have crashed even sooner had I done so.
+For the actual training, I used a minibatch size of 16 and left it to run for about 80 epoches on a TITAN X. (I had originally planned for 216 epoches, but the program crashed 5 hours in and I called it a day). The memory usage was quite heavy; with the rather small minibatch of 16 (256x256) images, I was using nearly 8 GB of RAM already! Though I could have still used a slightly larger minibatch, I have a feeling that the computer would have crashed even sooner had I done so.
 
 ### Results
 
-The results weren't great. But they weren't too bad in most cases, either - I'm no expert in image processing but I think they are better than any traditional techniques. Though to be fair this is quite a contrived scenario and I seriously doubt many people have worked on conversion of binary/manga images to sketches ... Anyway.<br>
+The results weren't great. But they weren't too bad in most cases, either - I'm no expert in image processing but I think they are better than any traditional techniques. Though to be fair this is quite a contrived scenario and I seriously doubt many people have worked on conversion of binary/manga images to sketches ... anyway.<br>
 
 ![](http://i.imgur.com/3lYCnEa.png)
 <center class="center-image">Originals.</center><br>
@@ -140,13 +148,21 @@ The results weren't great. But they weren't too bad in most cases, either - I'm 
 ![](http://i.imgur.com/ZeqMX1z.png)
 <center class="center-image">Sketchify recreation from binaries.</center><br>
 
-I think some of these testing examples were bound to be particularily difficult for the network. For example, images 3 and 4 contain a *prominent* background portion which very few training images would have, while image 1 is purely a background!
+I think some of these testing examples were bound to be particularily difficult for the network. For example, images 3 and 4 contain a *prominent* background portion which very few training images would have, while image 1 is purely a background! Additionally, the network struggled to generate smooth lines in most cases, producing a rather "ragged" result (I would love to know if there are any good binary image smoothing filters, so the network doesn't have to try and learn one for itself!)
 
-Also, it seems that eyes are either a hit-or-miss: the network either detects then darkens them (see the example before this section), or misses them completely and fades them out. Image 2 is definitely the best result, mostly for this reason. I think collecting more diverse training data and increasing the number of epoches would still improve performance. 
+In particular, it seems that eyes are a hit-or-miss: the network either detects then darkens them (see the example before this section), or misses them completely and fades them out. Image 2 is definitely the best result because it correctly identified the eyes. For this issue, I think collecting more diverse training data and increasing the number of epoches would still improve performance. 
 
 ### Final Note
 
-TBA
+<!--For generation of "original" pieces of artwork and/or images, RNNs -->
+
+While there's been great excitement in generation of original artwork with RNNs, CNNs have also been able to produce great results for different kinds of tasks, including classical image processing tasks which would have been historically difficult. For my specific task of regenerating a sketch from a binary image, I used the CNN architecture U-Net, which is relatively easy to understand and quite consumer-friendly, with decent results overall. 
+
+There are also other great neural nets for artwork stylization out there (see [deepart.io][deepart], [pix2pix][pix2pix], the latter of which also uses U-Net!) which all make use of CNN architecures. Check them out and maybe think of some new ideas for application!
+
+Github Repository: [https://github.com/Maytide/Sketchify](https://github.com/Maytide/Sketchify)
+
+<!--For generating more "original" images where we want to create new high-level structure from low level "pieces", RNNs seem to be more up to the task right now (see [*draw*][draw], and [this neat handwriting generator][rnn-handwriting]. It makes sense that-->
 
 [gan]: https://en.wikipedia.org/wiki/Generative_adversarial_networks
 [draw]: https://arxiv.org/pdf/1502.04623.pdf
@@ -163,3 +179,6 @@ TBA
 [conv-gif]: http://deeplearning.net/software/theano/tutorial/conv_arithmetic.html
 [cloud-atlas]: https://en.wikipedia.org/wiki/Cloud_Atlas_(novel)
 [awwnime]: https://reddit.com/r/awwnime
+[deepart]: https://deepart.io/
+[pix2pix]: https://affinelayer.com/pixsrv/
+<!--[rnn-handwriting]: http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/-->
