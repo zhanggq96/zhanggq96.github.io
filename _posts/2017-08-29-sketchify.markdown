@@ -7,7 +7,7 @@ categories: sketch tensorflow
 custom_css: none
 ---
 
-In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], which via a *decoder* draws a generated scene one part at a time, spacially building upon its previous renderings (similar to what writers would describe as a "gardner"). It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
+In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], draws a generated scene one part at a time, spacially building upon its previous renderings (similar to what writers would describe as a "gardner"). It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
 
 <!--
 <span align="center" class="quickdraw-samples">
@@ -34,9 +34,9 @@ U-Net was originally used for [biomedical image segmentation][u-net]. I was insp
 
 Since there's no prebuilt dataset for this sort of thing, first I'll discuss data collection and the image processing techniques I used to generate my data.
 
-For the creation of my dataset, I collected roughly 5800 anime images from my favorite source (reddit), more specifically the SFW anime art sub [/r/awwnime][awwnime]. They were almost all used as training data, whereas my validation and testing sets came from various other sources like other anime-themed subs or pixiv.net. All of the collected images were within the date range [2016/01/01, 2017/08/20-ish] so the art style is relatively up to date. 
+For the creation of my dataset, I collected roughly 5800 anime images from my favorite source (reddit), more specifically the SFW anime art sub [/r/awwnime][awwnime]. They were almost all used as training data, whereas my validation and testing sets came from various other sources like other anime-themed subs or pixiv.net. All of the collected images were within the date range [2016/01/01, 2017/08/20-ish] so the style of art is relatively up to date. 
 
-The images were all cropped/resized to (256x256); for landscape images, I selected the middle square portion whereas for portrait images I selected the topmost square portion, as I believe they would contain the most useful information. Now we will have to process these images to form approximations of our desired training/truth data
+The images were all cropped/resized to (256x256); for landscape images, I selected the middle square portion whereas for portrait images I selected the topmost square portion, as I believe they would contain the most useful information. Now we will have to process these images to form approximations of our desired training/truth data.
 
 The author of *deepcolor* applied onto full-colored images an adaptive thresholding technique to generate his "manga-style" training images. The idea of "thresholding" is based in that usually published manga is binary - a pixel is either fully black, or fully white - so we need to find a method which takes in a rgb pixel as input and purposefully maps it to either "black" or "white". However, **global** thresholding - thresholding the whole image at once - would not be a good conversion technique for this purpose. In the image below, the middle two images were generated using two different global conversion thresholds. Due to the uneven luminance, we have to sacrifice readability in one region for another.
 
@@ -130,7 +130,7 @@ For the actual training of the network, I collected roughly 5800 anime images fr
 The images were all cropped/resized to (256x256); for landscape images, I selected the middle square portion whereas for portrait images I selected the topmost square portion, as I believe they would contain the most useful information.
 -->
 
-For the actual training, I used a minibatch size of 16 and left it to run for about 80 epoches on a TITAN X. (I had originally planned for 216 epoches, but the program crashed 5 hours in and I called it a day). The memory usage was quite heavy; with the rather small minibatch of 16 (256x256) images, I was using nearly 8 GB of RAM already! Though I could have still used a slightly larger minibatch, I have a feeling that the computer would have crashed even sooner had I done so.
+For the actual training, I used a minibatch size of 16 and left it to run for about 80 epoches on a TITAN X. (I had originally planned for 216 epoches, but the program crashed 5 hours in and I called it a day). The memory usage was quite heavy; with the rather small minibatch of 16 (256x256) images, I was using nearly 8 GB of RAM already! Though I still could have used a slightly larger minibatch, I have a feeling that the computer would have crashed even sooner had I done so.
 
 ### Results
 
