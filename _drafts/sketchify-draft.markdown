@@ -7,7 +7,7 @@ categories: sketch tensorflow
 custom_css: none
 ---
 
-In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], draws a generated scene one part at a time, spacially building upon its previous renderings (similar to what writers would describe as a "gardner"). It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
+In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generate a set of figures that is alike in appearance to the training dataset. The [(R)NN][rnn] used by *draw* is known as a [variational auto-encoder][v-ae], which draws a generated scene one part at a time, spacially building upon its previous work (analogous to what writers would describe as a "gardner"). It is good at locally refining a drawing but has the weakness of lacking context. The consequence of this is that the generated images are usually of a similar style and low-level form to the training set data but they will differ in high-level form (see the introduction bit on variational auto-encoders).
 
 <!--
 <span align="center" class="quickdraw-samples">
@@ -16,7 +16,7 @@ In my last post on [*draw*][draw], I explored the use of a [GAN][gan] to generat
 -->
 ![ ](http://i.imgur.com/TTWv5kb.png){: .center-image }
 
-Depending on situation, this could be very a very desired trait: I suspect it could even be used to augment sets of training data for other deep learning tasks if the principle components of the data are in the complex varieties of high-level form. However, this behaviour would be rather useless for a task such as image processing, where the primary concern is to preserve the recognition of the high level structure while modifying something like luminance or contrast.
+Depending on situation, this could be very a very desired trait: I suspect it could even be used to augment training data for other deep learning tasks if the principle components of the data are in the high-level form. However, this behaviour would be rather useless for a task such as image processing, where the primary concern is to preserve the recognition of the high level structure while modifying something like luminance or contrast.
 
 <!--
 <span align="center" class="quickdraw-samples">
