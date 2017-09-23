@@ -18,4 +18,6 @@ You can find the source code for Jekyll at
 
 Pointless fun.
 
+I am a 4th year Electrical Engineering student and McMaster University with an interest in programming. 
+
 George Zhang (zhanggq@mcmaster.ca)

@@ -1046,7 +1046,7 @@ But first, let’s take a look at how the Kanji n-ranks compare with the i-ranks
 </div>
 
 <!--Move second half opf this paragraph to addendum EDIT:DONE-->
-One must be careful to note that the axes sizes are not equal; this is because we have further data on i-rank Kanji compared to the n-rank Kanji, which are limited to 2501 in number. The uneven axes sizes are a further consequence of this. Also, though it may appear like there are more i-like Kanji, in actuality there are 1,205 n-like Kanji and 829 i-like Kanji[^2].
+One must be careful to note that the axes sizes are not equal; this is because I collected more than 2501 (the highest n-rank data availible) Kanji from my internet source, so among the Kanji with n-rank ≤ 2501 there would naturally be some Kanji with i-rank > 2501 stretching out the chart along the i-rank axis. From this asymmetry it may appear like there are more i-like Kanji, but in actuality there are 1,205 n-like Kanji and 829 i-like Kanji[^2].
 
 I will denote a Kanji as n-like if it's n-rank < i-rank and i-like if it's i-rank < n-rank. If we imagine a line with unit slope dividing the quadrant in the graph into two, i-like kanji are below this line and n-like kanji are to the left. There are 2,038 data points in total, 98 less than the number of total number of Jōyō Kanji: the reason for this is that some Jōyō Kanji exceed the n-rank threshold of 2,501[^1]. 
 

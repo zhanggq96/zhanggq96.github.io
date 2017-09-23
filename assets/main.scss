@@ -17,6 +17,10 @@
 
 //--------------------------------------
 
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
 .center-image {
     margin: 0 auto;
     display: block;
@@ -79,7 +83,8 @@
 //// End Kanji-box Legend
 
 .kanji-box {
-  display: inline-flex;
+//  line-height: 1.3125;
+  display: inline-block;
   flex-direction:column;
   margin: 0 auto;
   margin-top: 15px;
@@ -101,12 +106,14 @@
 }
 
 .kanji-row {
-  height: 21px;
+  height: 21px !important;
 }
 
 .kanji {
   display: inline;
-  padding: 2px;
+  padding: 2px !important;
+  width: 20px !important;
+  height: 21px !important;
   // text-space-collapse:discard;
 }
 
