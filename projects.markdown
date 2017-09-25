@@ -19,7 +19,7 @@ permalink: /projects/
 
 <!--/* -------------------------------- */-->
 
-Here are some of the projects I've worked on. They can be viewed on <a href="https://github.com/Maytide">my github</a>.
+Here are some of the projects I've worked on. They can also be viewed on <a href="https://github.com/Maytide">my github</a>.
 
 <!--https://stackoverflow.com/questions/19089933/how-to-position-two-elements-side-by-side-using-css-->
 <div class="project-container">
