@@ -217,7 +217,7 @@ Clearly, it doesn't resemble any of the other quickdraw objects I've used! Now I
     <img src="http://i.imgur.com/aeCyWDL.png">
 </span>
 
-... Yes, these are the same four classes of objects I used previously. While "apple" remains intelligible, the other three look like the result of monkeys splattering paint against a wall. I do believe that this is because I used the triangle seed, rather than the last iteration of xtrain, but perhaps not so much as it may appear: I mentioned previously there was selection bias in the images I selected for display in my first showcase (containing images seeded from feed_dict). I think this is best explained by displaying some of the images that I decided to omit:
+... Yes, these are the same four classes of objects I used previously. While "apple" remains intelligible, the other three look like the result of monkeys splattering paint against a wall. I believe that this is because I used the triangle seed, rather than the last iteration of xtrain, but perhaps not so much as it may appear: I mentioned previously there was selection bias in the images I selected for display in my first showcase (containing images seeded from feed_dict). I think this is best explained by displaying some of the images that I decided to omit:
 
 <span align="center" class="quickdraw-samples">
     <img src="http://i.imgur.com/8ypBgMi.png">

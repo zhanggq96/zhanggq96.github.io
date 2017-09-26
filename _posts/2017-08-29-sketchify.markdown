@@ -156,7 +156,7 @@ In particular, it seems that eyes are a hit-or-miss: the network either detects 
 
 <!--For generation of "original" pieces of artwork and/or images, RNNs -->
 
-While there's been great excitement in generation of original artwork with RNNs, CNNs have also been able to produce great results for different kinds of tasks, including classical image processing tasks which would have been historically difficult. For my specific task of regenerating a sketch from a binary image, I used the CNN architecture U-Net, which is relatively easy to understand and quite consumer-friendly, with decent results overall. 
+While there's been great excitement in generation of original artwork with RNNs, CNNs have also been able to produce great results for different kinds of tasks, including classical image processing tasks which have been historically difficult. For my specific task of regenerating a sketch from a binary image, I used the relatively easy to use CNN architecture U-Net, with decent results overall. 
 
 There are also other great neural nets for artwork stylization out there (see [deepart.io][deepart], [pix2pix][pix2pix], the latter of which also uses U-Net!) which all make use of CNN architecures. Check them out and maybe think of some new ideas for application!
 

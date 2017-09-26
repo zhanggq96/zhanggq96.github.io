@@ -20,6 +20,6 @@ Pointless fun.
 
 I am a 4th year Electrical Engineering student at McMaster University with an interest in coding. I like watching anime, travelling with friends and learning new programming frameworks in my spare time.
 
-You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}).
+You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}), and my blog [here]({{ site.baseurl }}{% link index.md %}).
 
 George Zhang (zhanggq@mcmaster.ca)
