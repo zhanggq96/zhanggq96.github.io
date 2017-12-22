@@ -54,6 +54,16 @@ Here are some of the projects I've worked on. They can also be viewed on <a href
     </span>
     
 </div>
+<div class="project-container">
+    <span class="project-image" style="width:50%;margin-right:2%;float: left;">
+        <img src="https://i.imgur.com/j6nB8Xj.jpg" class="project-image">
+    </span>
+    <span class="project-desc" style="width:45%; float: left;">
+        <h5>Hardware Image Decompressor</h5>
+        <p>Decompresses a .mic11 image file, a JPEG-like standard developed for 3DQ5. Performs the sequence of steps required for the lossless decoding and dequantization (milestone 3), inverse discrete cosine transform (milestone 2), interpolation and colorspace conversion (milestone 1) of an image file.</p>
+    </span>
+    
+</div>
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
