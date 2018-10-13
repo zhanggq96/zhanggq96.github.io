@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<!-- jekyll serve --drafts -->
+
 <!--
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
@@ -16,7 +18,7 @@ You can find the source code for Jekyll at
 [jekyll](https://github.com/jekyll/jekyll)
 --> 
 
-I am an Electrical Engineering student at McMaster University with an interest in statistical signal processing, image processing and discrete math. In my spare time I enjoy programming.
+I am an undergraduate Electrical Engineering student at McMaster University with an interest in statistical signal processing, image processing and discrete math. In my spare time I enjoy programming.
 
 You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}).
 

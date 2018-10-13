@@ -26,8 +26,8 @@ permalink: /projects/
         <img src="https://i.imgur.com/lqpaPL1.png" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5><a href="http://www.maystride.com">Course Dependency Graph</a></h5>
-        <p>Visualize the prerequisite requirements of McMaster's courses. Data was taken from the "Prerequisite(s)" section of [AcademicCalendars](https://academiccalendars.romcmaster.ca/preview_course_nopop.php?catoid=32&coid=177311) and is parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are then recursively merged into a graph to visualize the full dependence structure, starting from the very first courses required.</p>
+        <h5><a href="https://maytide.github.io/CourseDependencyGraph/">Course Dependency Graph</a></h5>
+        <p>Visualize the prerequisite requirements of McMaster's courses. Data was taken from the "Prerequisite(s)" section of AcademicCalendars and is parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are recursively merged into a graph to visualize the full dependence structure, starting from the very first courses required.</p>
     </span>
     
 </div>
@@ -81,7 +81,7 @@ permalink: /projects/
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Human Reaction Timer</h5>
-        <p>A hardware-level implementation of a human reaction timer designed using Verilog. Randomly generates bit sequences using a linear feedback shift register, then buzzes when sequence matches a time counter; user's reaction time is recorded when switch is flipped after buzz.</p>
+        <p>A hardware-level implementation of a human reaction timer designed using Verilog. Randomly generates bit sequences using a linear feedback shift register, then buzzes when sequence matches a time counter; user's reaction time is recorded on a 7-seg when switch is flipped after buzz.</p>
         <p>Made for Comp Eng 2DI4, with Daniel Merlano.</p>
     </span>
     
