@@ -19,15 +19,25 @@ permalink: /projects/
 
 <!--/* -------------------------------- */-->
 
-Here are some of the projects I've worked on. They can also be viewed on <a href="https://github.com/Maytide">my github</a>.
-
 <!--https://stackoverflow.com/questions/19089933/how-to-position-two-elements-side-by-side-using-css-->
+
+<div class="project-container">
+    <span class="project-image" style="width:50%;margin-right:2%;float: left;">
+        <img src="https://i.imgur.com/lqpaPL1.png" class="project-image">
+    </span>
+    <span class="project-desc" style="width:45%; float: left;">
+        <h5><a href="http://www.maystride.com">Course Dependency Graph</a></h5>
+        <p>Visualize the prerequisite requirements of McMaster's courses. Data was taken from the "Prerequisite(s)" section of [AcademicCalendars](https://academiccalendars.romcmaster.ca/preview_course_nopop.php?catoid=32&coid=177311) and is parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are then recursively merged into a graph to visualize the full dependence structure, starting from the very first courses required.</p>
+    </span>
+    
+</div>
+
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
         <img src="https://i.imgur.com/Ro1zMAf.png?2" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5><a href="http://www.maystride.com">Stride</a></h5>
+        <h5><a href="http://www.maystride.com">Anime Stat-tracker</a></h5>
         <p>An automated anime stat-tracking website that aggregates data from MAL over time. I designed the website using django, bootstrap and AngularJS, and the recommender engine using numpy.</p>
     </span>
     
@@ -56,11 +66,11 @@ Here are some of the projects I've worked on. They can also be viewed on <a href
 </div>
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://i.imgur.com/j6nB8Xj.jpg" class="project-image">
+        <img src="https://i.imgur.com/AobSrGb.jpg" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Hardware Image Decompressor</h5>
-        <p>Decompresses a .mic11 image file, a JPEG-like standard developed for 3DQ5. Performs the sequence of steps required for the lossless decoding and dequantization (milestone 3), inverse discrete cosine transform (milestone 2), interpolation and colorspace conversion (milestone 1) of an image file.</p>
+        <p>Decompresses a .mic11 image file, a JPEG-like standard made for Comp Eng 3DQ5. Performs the sequence of steps required for the lossless decoding, dequantization, inverse discrete cosine transform, interpolation and colorspace conversion of an image file.</p>
     </span>
     
 </div>

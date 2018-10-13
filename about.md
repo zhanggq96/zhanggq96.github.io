@@ -16,9 +16,7 @@ You can find the source code for Jekyll at
 [jekyll](https://github.com/jekyll/jekyll)
 --> 
 
-Pointless fun.
-
-I am a 4th year Electrical Engineering student at McMaster University with an interest in coding. I like watching anime, travelling with friends and learning new programming frameworks in my spare time.
+I am an Electrical Engineering student at McMaster University with an interest in statistical signal processing, image processing and discrete math. In my spare time I enjoy programming.
 
 You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}).
 
