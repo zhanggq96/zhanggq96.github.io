@@ -18,7 +18,7 @@ You can find the source code for Jekyll at
 [jekyll](https://github.com/jekyll/jekyll)
 --> 
 
-I am an undergraduate Electrical Engineering student at McMaster University with an interest in statistical signal processing, image processing and discrete math. In my spare time I enjoy programming.
+I am an undergraduate Electrical Engineering student at McMaster University with an interest in statistical signal processing, image processing and discrete math. In my spare time I enjoy programming, learning Japanese and fooling around with drawing/photo editing software (though I can't say I'm any good at it).
 
 You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}).
 

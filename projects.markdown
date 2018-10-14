@@ -34,11 +34,22 @@ permalink: /projects/
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://i.imgur.com/Ro1zMAf.png?2" class="project-image">
+        <img src="https://i.imgur.com/4glcYQ6.jpg" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5><a href="http://www.maystride.com">Anime Stat-tracker</a></h5>
-        <p>An automated anime stat-tracking website that aggregates data from MAL over time. I designed the website using django, bootstrap and AngularJS, and the recommender engine using numpy.</p>
+        <h5>Kanji Frequency</h5>
+        <p>An analysis of kanji frequency in Japanese-speaking subreddits. Data collected with the reddit API, managed with an sqlite3 database and analysed using numpy/pandas. Visualizations generated using d3.js and html/css.</p>
+    </span>
+    
+</div>
+
+<div class="project-container">
+    <span class="project-image" style="width:50%;margin-right:2%;float: left;">
+        <img src="https://i.imgur.com/AobSrGb.jpg" class="project-image">
+    </span>
+    <span class="project-desc" style="width:45%; float: left;">
+        <h5>Hardware Image Decompressor</h5>
+        <p>Decompresses a .mic11 image file, a JPEG-like standard made for Comp Eng 3DQ5. Performs the sequence of steps required for the lossless decoding, dequantization, inverse discrete cosine transform, interpolation and colorspace conversion of an image file.</p>
     </span>
     
 </div>
@@ -56,21 +67,22 @@ permalink: /projects/
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://i.imgur.com/4glcYQ6.jpg" class="project-image">
+        <img src="https://imgur.com/7AEHHSD" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5>Kanji Frequency</h5>
-        <p>An analysis of kanji frequency in Japanese-speaking subreddits. Data collected with the reddit API, managed with an sqlite3 database and analysed using numpy/pandas. Visualizations generated using d3.js and html/css.</p>
+        <h5>Quickdraw Gifs</h5>
+        <p>Using the DRAW RNN to generate gifs from Google's Quickdraw dataset.</p>
     </span>
     
 </div>
+
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://i.imgur.com/AobSrGb.jpg" class="project-image">
+        <img src="https://i.imgur.com/Ro1zMAf.png?2" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5>Hardware Image Decompressor</h5>
-        <p>Decompresses a .mic11 image file, a JPEG-like standard made for Comp Eng 3DQ5. Performs the sequence of steps required for the lossless decoding, dequantization, inverse discrete cosine transform, interpolation and colorspace conversion of an image file.</p>
+        <h5><a href="http://www.maystride.com">Anime Stat-tracker</a></h5>
+        <p>An automated anime stat-tracking website that aggregates data from MAL over time. I designed the website using django, bootstrap and AngularJS, and the recommender engine using numpy.</p>
     </span>
     
 </div>
