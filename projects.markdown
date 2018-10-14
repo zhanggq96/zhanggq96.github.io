@@ -67,7 +67,7 @@ permalink: /projects/
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://imgur.com/7AEHHSD" class="project-image">
+        <img src="https://i.imgur.com/7AEHHSD.gif" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Quickdraw Gifs</h5>
