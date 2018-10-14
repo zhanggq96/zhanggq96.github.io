@@ -37,10 +37,20 @@ permalink: /projects/
         <img src="https://i.imgur.com/4glcYQ6.jpg" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5>Kanji Frequency</h5>
+        <h5><a href="https://maytide.github.io/japanese/reddit/2017/06/02/kanji-frequency.html"></a>Kanji Frequency</h5>
         <p>An analysis of kanji frequency in Japanese-speaking subreddits. Data collected with the reddit API, managed with an sqlite3 database and analysed using numpy/pandas. Visualizations generated using d3.js and html/css.</p>
     </span>
     
+</div>
+
+<div class="project-container">
+    <span class="project-image" style="width:50%;margin-right:2%;float: left;">
+        <img src="https://i.imgur.com/AKisPoi.gif" class="project-image">
+    </span>
+    <span class="project-desc" style="width:45%; float: left;">
+        <h5>Minlateration</h5>
+        <p>An optimization-based approach to multilateration with an unknown number of targets. Multilateration is the technique of using only distance measurements from stations to determine the location of a target, with no information about the direction from which this distance was measured.</p>
+    </span>
 </div>
 
 <div class="project-container">
@@ -51,7 +61,6 @@ permalink: /projects/
         <h5>Hardware Image Decompressor</h5>
         <p>Decompresses a .mic11 image file, a JPEG-like standard made for Comp Eng 3DQ5. Performs the sequence of steps required for the lossless decoding, dequantization, inverse discrete cosine transform, interpolation and colorspace conversion of an image file.</p>
     </span>
-    
 </div>
 
 <div class="project-container">
