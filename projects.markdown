@@ -27,7 +27,7 @@ permalink: /projects/
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5><a href="https://maytide.github.io/CourseDependencyGraph/">Course Dependency Graph</a></h5>
-        <p>Visualize the prerequisite requirements of McMaster's courses. Data was taken from the "Prerequisite(s)" section of AcademicCalendars and is parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are recursively merged into a graph to visualize the full dependence structure, starting from the very first courses required.</p>
+        <p>Visualize the prerequisite requirements of McMaster's courses. Text descriptions were taken from the "Prerequisite(s)" section of AcademicCalendars and parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are recursively merged into a graph to visualize the full dependence structure, starting from the very first courses required.</p>
     </span>
     
 </div>
@@ -37,7 +37,7 @@ permalink: /projects/
         <img src="https://i.imgur.com/4glcYQ6.jpg" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
-        <h5><a href="https://maytide.github.io/japanese/reddit/2017/06/02/kanji-frequency.html"></a>Kanji Frequency</h5>
+        <h5><a href="https://maytide.github.io/japanese/reddit/2017/06/02/kanji-frequency.html">Kanji Frequency</a></h5>
         <p>An analysis of kanji frequency in Japanese-speaking subreddits. Data collected with the reddit API, managed with an sqlite3 database and analysed using numpy/pandas. Visualizations generated using d3.js and html/css.</p>
     </span>
     
@@ -65,11 +65,21 @@ permalink: /projects/
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
+        <img src="https://imgur.com/H51uvQC" class="project-image">
+    </span>
+    <span class="project-desc" style="width:45%; float: left;">
+        <h5>Image Contrast Enhancement</h5>
+        <p>Implemetation of "A Linear Programming Approach for Optimal Contrast Tone Mapping" in MATLAB. Enhances the contrast of color images under poor lighting using a contrast mapping technique defined by linear programming constraints.</p>
+    </span>
+</div>
+
+<div class="project-container">
+    <span class="project-image" style="width:50%;margin-right:2%;float: left;">
         <img src="https://i.imgur.com/2LrY6Qw.jpg" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Sketchify</h5>
-        <p>Transforms binary images to sketch-like images. Trained off of data collected from /r/awwnime, which was processed into a set of "binary" and "sketch" groups. Fork of U-Net GAN; programmed in tensorflow.</p>
+        <p>Using Deep Learning, transforms binary images to sketch-like images. Trained off of data collected from /r/awwnime, which was processed into a set of "binary" and "sketch" groups. Fork of U-Net GAN; programmed in tensorflow.</p>
     </span>
     
 </div>
@@ -80,7 +90,7 @@ permalink: /projects/
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Quickdraw Gifs</h5>
-        <p>Using the DRAW RNN to generate gifs from Google's Quickdraw dataset.</p>
+        <p>Using the DRAW RNN trained on Google's Quickdraw dataset to generate gifs.</p>
     </span>
     
 </div>
