@@ -65,11 +65,11 @@ permalink: /projects/
 
 <div class="project-container">
     <span class="project-image" style="width:50%;margin-right:2%;float: left;">
-        <img src="https://imgur.com/H51uvQC" class="project-image">
+        <img src="https://i.imgur.com/H51uvQC.png" class="project-image">
     </span>
     <span class="project-desc" style="width:45%; float: left;">
         <h5>Image Contrast Enhancement</h5>
-        <p>Implemetation of "A Linear Programming Approach for Optimal Contrast Tone Mapping" in MATLAB. Enhances the contrast of color images under poor lighting using a contrast mapping technique defined by linear programming constraints.</p>
+        <p>Implemetation of "A Linear Programming Approach for Optimal Contrast Tone Mapping" in MATLAB. Enhances the contrast of color images under poor lighting using a contrast mapping technique defined by linear programming constraints. For Comp Eng 4TN4 project.</p>
     </span>
 </div>
 
