@@ -10,3 +10,16 @@ I am an undergraduate Electrical Engineering student at McMaster University with
 You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}), and my CV [here](https://drive.google.com/open?id=1C2J2Ox-5NXxqoJsrpqE7M1CDfd84Xp_L).
 
 George Zhang (zhanggq@mcmaster.ca)
+
+{% for post in site.posts %}
+  <article>
+    <h2>
+    TEST
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    {{ post.content }}
+  </article>
+{% endfor %}
