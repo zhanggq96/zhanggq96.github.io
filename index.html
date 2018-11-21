@@ -10,3 +10,22 @@ I am an undergraduate Electrical Engineering student at McMaster University with
 You can view some of my projects [here]({{ site.baseurl }}{% link projects.markdown %}), and my CV [here](https://drive.google.com/open?id=1C2J2Ox-5NXxqoJsrpqE7M1CDfd84Xp_L).
 
 George Zhang (zhanggq@mcmaster.ca)
+
+<ul class="posts noList">
+    {% for post in paginator.posts %}
+      <li>
+          <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+          <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>  
+    {% endif %} 
+    {% if paginator.next_page %}
+      <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
+    {% endif %}
+  </div>
