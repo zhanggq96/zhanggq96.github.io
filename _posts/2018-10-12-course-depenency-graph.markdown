@@ -5,6 +5,7 @@ date:   2018-10-12 21:00:00 -0400
 author: George Zhang
 categories: graph
 custom_css: none
+hidden: true
 ---
 
 This project is about visualizing prerequisite relationships between courses offered at McMaster University as a graph. You can view it [here](https://maytide.github.io/CourseDependencyGraph/).

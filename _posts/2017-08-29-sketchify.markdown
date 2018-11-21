@@ -4,6 +4,7 @@ title:  "Sketchify: Binary to Sketch"
 date:   2017-08-28 21:00:00 -0400
 author: George Zhang
 categories: sketch tensorflow 
+hidden: true
 custom_css: none
 ---
 
