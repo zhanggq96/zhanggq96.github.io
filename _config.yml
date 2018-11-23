@@ -32,4 +32,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Old_content
-paginate: 5

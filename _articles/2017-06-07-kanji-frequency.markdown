@@ -4,7 +4,7 @@ title:  "Kanji Frequency"
 date:   2017-06-01 22:48:03 -0400
 author: George Zhang
 categories: japanese reddit 
-hidden: true
+published: false
 ivn_js:
 - kanji_frequency/newspaper_vs_internet_freq_gr_1.js
 - kanji_frequency/newspaper_vs_internet_freq_gr_2.js
