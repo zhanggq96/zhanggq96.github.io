@@ -14,5 +14,7 @@ August 2017
 May 2017
 
 Projects/Presentations:
+
 [Cryptography](assets/files/cryptography.pdf)
+
 [Image Contrast Enhancement](assets/files/octm_project.pdf)
