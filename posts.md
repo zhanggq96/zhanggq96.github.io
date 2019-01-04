@@ -10,8 +10,9 @@ Oct 2018
 # [Kanji Frequency]({{ site.baseurl }}{% link post_kf.markdown %})
 August 2017
 
-<!-- # [Binary Image to Sketch]({{ site.baseurl }}{% link post_sketch.markdown %})
-June 2017 -->
-
 # [Hello World]({{ site.baseurl }}{% link post_hw.markdown %})
 May 2017
+
+Projects/Presentations:
+[Cryptography](assets/files/cryptography.pdf)
+[Image Contrast Enhancement](assets/files/octm_project.pdf)
