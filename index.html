@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Webpage</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"> -->
+        <link href="https://fonts.cdnfonts.com/css/irenyekan" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+    </head>
+    <body>
+        <div class="container page-container">
+          <h1 class="title">
+            George Zhang
+          </h1>
+          <div class="icon-container">
+            <div class="icon"><a href="https://github.com/maytide" target="_lank"><img src="assets/img/icon-github.png"></a></div>
+            <div class="icon"><a href="https://scholar.google.ca/citations?user=iHcxnFsAAAAJ&hl=en"><img src="assets/img/icon-scholar.svg"><a/></div>
+            <div class="icon"><a href="mailto:gq.zhang@mail.utoronto.ca"><img src="assets/img/icon-email.svg"><a/></div>
+            <div class="icon"><a href="https://drive.google.com/file/d/19rxxzg7ZuWpV9beYBGrWhrE-mvbEwkzx/view?usp=sharing"><img src="assets/img/icon-cv.png"><a/></div>
+          </div>
+          <p id="bio">
+            I completed my undergraduate at McMaster from 2014-2019 and my master's degree at the University of Toronto from 2019-2021, both in ECE. My main interest is broadly in machine learning. During my master's I worked on applications with GANs and image compression along with their connection to information theory, but I am also interested in various other things including (but not limited to) optimization and statistical learning on the theory side, and computer vision or graphics on the practical side. I don't have much experience with the latter but would love to learn about it!
+          </p>
+          <h2>
+            Education
+          </h2>
+          <b>University of Toronto</b>
+          <div>Master of Applied Science - Electrical and Computer Engineering</div>
+          <div>Topics: Machine Learning, Image Compression, Information Theory</div>
+          <div>Supervisor: Ashish Khisti</div>
+          <p></p>
+          <b>McMaster University</b>
+          <div>Bachelor of Engineering - Electrical Engineering</div>
+          <div>Minors in Mathematics and Computer Science</div>
+          <div>GPA: 11.2/12 (3.87/4.00)</div>
+
+          <h2>
+            Publications
+          </h2>
+          <textarea id="bibtex_input" style="display:none;">
+            @inproceedings{zhang2021universal,
+              title={Universal Rate-Distortion-Perception Representations for Lossy Compression},
+              author={Zhang, George and Qian, Jingjing and Chen, Jun and Khisti, Ashish},
+              journal={NeurIPS},
+              volume={34},
+              year={2021},
+              url={https://arxiv.org/pdf/2106.10311.pdf}
+            }
+            @inproceedings{liu2021cross,
+              title={Lossy Compression with Distribution Shift as Entropy-Constrained Optimal Transport},
+              author={Liu*, Huan and Zhang*, George and Chen, Jun and Khisti, Ashish},
+              journal={ICLR},
+              year={2022},
+              url={https://openreview.net/forum?id=BRFWxcZfAdC}
+            }
+          </textarea>
+          <div class="bibtex_template">
+            <div style="margin-left: 00px; margin-bottom:0px;">
+              <span class="title"></span>
+            </div>
+            <div class="if author" style="font-weight: normal;">
+              <span class="author"></span>
+              <span class="if url" style="margin-left: 10px">
+                <a class="url" style="color:black; font-size:10px">(view online)</a>
+              </span>
+            </div>
+            <div class="if journal" style=margin-bottom:13px;>
+              <span class="journal"></span> <span class="year">
+            </div>
+          </div>
+          <p>* denotes equal contribution</p>
+          <div id="bibtex_display"></div>
+          <h2>
+            Miscellaneous
+          </h2>
+          <p class="misc-text">
+            <a href="projects.html">Here</a> are some of my past projects.
+          </p>
+          <p class="misc-text">
+            I got a <a href="https://www.math.mcmaster.ca/news-events/news/1497-mcmaster-shines-in-75th-putnam-competition.html">mention</a> from the math department!
+          </p>
+          <p class="misc-text">
+            A <a href="https://i.imgur.com/qgbXmEP.jpg">picture</a> from around where I used to live in Hamilton :)
+          </p>
+        </div>
+    </body>
+</html>

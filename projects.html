@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"> -->
+        <link href="https://fonts.cdnfonts.com/css/irenyekan" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container page-container">
+            <h1 class="title">Projects</h1>
+            <div class="project-container">
+                <div class="project-image-box"><img class="project-image" src="https://i.imgur.com/QMMvKtF.gif"></div>
+                <div class="project-text">
+                    <b class="project-title"><a href="https://github.com/Maytide/AFA_classifier_gradients">Active Feature Acquisition with Classifier Gradients<a/></b>
+                    <p class="project-description">
+                        It is not always feasible to acquire all features immediately. This project explores an active feature selection strategy for classification, in which classification can be performed at each stage of feature acquisition. Unlike static feature selection, active feature selection works on a per-instance basis in which the next feature to acquire is conditioned on the values of already observed features. In this project, features are selected sequentially based on how much the l2-norm of the gradient of a trained classifier is affected. Written in JAX.
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <img class="project-image" src="https://i.imgur.com/4iyc3He.png">
+                <div class="project-text">
+                    <b class="project-title"><a href="https://github.com/Maytide/Minlateration">Multi-Target Location without Angle Information<a/></b>
+                    <p class="project-description">
+                        Multi-target location with only distance and no angle information. The aim is to locate a target or multiple targets from some number of base stations with known location, from which only distance measurements are performed. In the single target case, we can formulate an optimization problem to find the point minimizing the sum of the distances to each base station's radius of detection. In the multi-target case this procedure is performed along with a k-means clustering algorithm to associate each target with nearby base stations.
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <img class="project-image" src="https://i.imgur.com/pvzMdnZ.png">
+                <div class="project-text">
+                    <b class="project-title"><a href="https://github.com/Maytide/CourseDependencyGraph">Course Dependecy Graph</a></b>
+                    <p class="project-description">
+                        Visualization of the prerequisite dependencies between McMaster University courses. Text descriptions were scraped from the official website and parsed into a tree modelling the logical dependencies between courses. On the browser end, these trees are recursively merged into a graph to visualize the full dependence structure starting from prerequisite-free courses.
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <img class="project-image" src="https://i.imgur.com/4glcYQ6.jpg">
+                <div class="project-text">
+                    <b class="project-title"><a href="kanji.html">Kanji Frequency<a/></b>
+                    <p class="project-description">
+                        Analysis of Kanji usage frequency in Japanese speaking subreddits. Data collected with the reddit API, visualizations generated using d3.js and some basic html/css. This was written quite a long time ago.
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <img class="project-image" src="https://i.imgur.com/H51uvQC.png">
+                <div class="project-text">
+                    <b class="project-title">Image Contrast Enhancement</b>
+                    <p class="project-description">
+                        Implemetation of "A Linear Programming Approach for Optimal Contrast Tone Mapping" in MATLAB. Enhances the contrast of color images under poor lighting using a contrast mapping technique defined by linear programming constraints.
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image-box" id="recycle-rover"><img class="project-image" src="https://i.imgur.com/Mr3wi30.jpg"></div>
+                <div class="project-text">
+                    <b class="project-title">Automated Collection Rover</b>
+                    <p class="project-description">
+                        A rover which detects recyclable cans using computer vision and collects them to a disposal area. Created a UI to label bounding boxes for objects as training data. Trained a Faster R-CNN ResNet101 to detect the objects. Raspberry Pi rover camera wirelessly transmits images to a remote server, which detects objects using the CNN and sends back locations for the rover to go to. Final year capstone project, completed in a group of 4.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

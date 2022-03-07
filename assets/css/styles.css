@@ -1,0 +1,103 @@
+.page-container {
+    max-width: 768px;
+    /* font-family: "Montserrat", "Verdana", sans-serif; */
+    font-family: 'IRENYekan', sans-serif;
+    margin: auto;
+
+    text-align: left;
+    margin-bottom: 200px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+#bio {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+a {
+   color: #4CD0EB;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.icon {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-container {
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+.misc-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.project-image-box {
+    object-fit: cover;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 320px;
+    display: inline-block;
+    margin-right: 10px;
+    /* object-fit: cover; */
+}
+
+.project-text {
+    max-width: 410px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.project-title {
+    display: inline-block;
+    overflow-wrap: break-word;
+    max-width: 410px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.project-description {
+    /* display: inline-block; */
+    overflow-wrap: break-word;
+    max-width: 410px;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#recycle-rover {
+    margin-top: 30px;
+}
+
+.project-container:hover .project-title a {
+    color: #4CD0EB;
+}
+
+.project-container a:link    {color:#000;}  /* unvisited link  */
+.project-container a:visited {color:#000;}  /* visited link    */
+.project-container a:active  {color:#000;}  /* selected link   */
