@@ -49,6 +49,8 @@ a {
     margin-bottom: 10px;
 }
 
+/* ------------------------- project styling ------------------------- */
+
 .project-container {
     display: flex;
     margin-bottom: 25px;
@@ -101,3 +103,208 @@ a {
 .project-container a:link    {color:#000;}  /* unvisited link  */
 .project-container a:visited {color:#000;}  /* visited link    */
 .project-container a:active  {color:#000;}  /* selected link   */
+
+/* ------------------------- cv styling ------------------------- */
+
+
+hr {
+    height: 1px;
+    background: #AAAAAA;
+}
+
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    max-width: 960px;
+    /* font-family: 'Palatino Linotype', sans-serif; */
+    font-family: 'TeXGyrePagella', sans-serif;
+}
+
+.cv-title {
+    flex: 1;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+    width: 100%;
+    /* font-weight: bold; */
+}
+
+.cv-section-title {
+    flex: 1;
+    margin-bottom: 5px;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'LMSans10', sans-serif;
+}
+
+.cv-section {
+    width: 100%;
+}
+
+.cv-icon-row {
+    margin: auto;
+    text-align: center;
+}
+
+.cv-icon-group a {
+    color: black;
+}
+
+.cv-icon-group {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.cv-separator {
+    width: 100%;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.4em;
+    background-color: #888888;
+    /* border: 0.05px solid gray; */
+    border-width: 3px; /* Much lighter color when exported to pdf, even though shows as dark in browser */
+}
+
+.cv-list {
+    width: 100%;
+}
+
+.cv-entry-edu {
+    /* font-size: 17px; */
+    font-size: 20px;
+}
+
+.cv-entry-edu-bullet {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-date {
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 120px;
+    margin-right: 20px;
+    display: inline-block;
+    font-family: 'TeXGyrePagella', sans-serif;
+}
+
+.cv-ribbon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-entry-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 720px;
+}
+
+.cv-entry-content p {
+    text-align: justify;
+}
+
+.cv-entry-content li {
+    text-align: justify;
+}
+
+.cv-exp-list {
+    padding-left: 20px;
+}
+
+#helper-text-pubs-1 {
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.cv-publications-title {
+    display: inline-block;
+    width: auto;
+}
+
+.cv-entry-pub {
+    font-size: 20px;
+}
+
+.cv-entry-pub-ul {
+    margin-bottom: 8px;
+}
+
+.cv-entry-pub-bullet {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-entry-pub-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* skills section */
+
+.cv-entry-skills {
+    display: inline-block;
+    vertical-align: top;
+    /* max-width: 720px; */
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cv-entry-skills-bullet {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-entry-skills-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 750px;
+}
+
+.cv-skill {
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 100px;
+    margin-right: 20px;
+    display: inline-block;
+    font-family: 'LMSans10', sans-serif;
+}
+
+.cv-section-skills {
+    margin-bottom: 12px;
+}
+
+.cv-entry-projects {
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    /* max-width: 720px; */
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cv-entry-projects-bullet {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 880px;
+    text-align: justify;
+}
+
+.cv-project {
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.cv-entry-project-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ---- */
+.lh-24-px {
+    line-height: 24px;
+}
