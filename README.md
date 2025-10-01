@@ -1,4 +1,4 @@
 # Personal webpage
 
 Personal webpage.
-[Maytide.github.io](https://Maytide.github.io)
+[zhanggq96.github.io](https://zhanggq96.github.io)
